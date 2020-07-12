@@ -1,4 +1,5 @@
 const os = require('os');
+const sys = require('systeminformation');
 const gh = require('@octokit/rest');
 
 const secrets = require('./secrets.json');
@@ -14,19 +15,19 @@ setInterval(() => uploadSystemStats().then(() => {
   console.log('Gist updated');
 }), 5 * 1000);
 
-const uploadSystemStats = () => {
-  const cpus = os.cpus();
+const uploadSystemStats = async () => {
+  const cpu = await sys.cpu();
+  const cpuSpeed = await sys.cpuCurrentspeed();
+
+  const memory = await sys.mem();
 
   system = {
     version: new Date(),
     cpu: {
-      cores: cpus,
-      avgCpuUsage: average(cpus.map(x => x.speed))
+      details: cpu,
+      speed: cpuSpeed
     },
-    mem: {
-      total: os.totalmem(),
-      free: os.freemem()
-    },
+    memory: memory,
     uptime: os.uptime(),
   };
 
