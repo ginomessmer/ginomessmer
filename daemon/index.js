@@ -10,22 +10,24 @@ const octokit = new gh.Octokit({
 
 console.log('Daemon started');
 
-setInterval(() => {
-  uploadSystemStats().then(x => {
-    console.log('Gist updated');
-  });
-
-}, 5 * 1000);
+setInterval(() => uploadSystemStats().then(() => {
+  console.log('Gist updated');
+}), 5 * 1000);
 
 const uploadSystemStats = () => {
+  const cpus = os.cpus();
+
   system = {
     version: new Date(),
-    cpus: os.cpus(),
-    uptime: os.uptime(),
+    cpu: {
+      cores: cpus,
+      avgCpuUsage: average(cpus.map(x => x.speed))
+    },
     mem: {
       total: os.totalmem(),
       free: os.freemem()
-    }
+    },
+    uptime: os.uptime(),
   };
 
   return octokit.gists.update({
@@ -37,3 +39,5 @@ const uploadSystemStats = () => {
     }
   });
 }
+
+const average = arr => arr.reduce((p, c) => p + c, 0) / arr.length;
