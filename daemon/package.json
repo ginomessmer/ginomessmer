@@ -8,5 +8,12 @@
     "start": "node index.js"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "@octokit/rest": "^18.0.0",
+    "axios": "^0.19.2"
+  },
+  "devDependencies": {
+    "@octokit/types": "^5.0.1"
+  }
 }
