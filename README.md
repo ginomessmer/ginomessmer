@@ -2,7 +2,7 @@
 <h1 align="center">Gino Messmer</h1>
 <p align="center">Hi there! I'm Gino - a computer science student and a full-stack software engineer at <a href="https://www.media-lesson.com/">medialesson</a>.</p>
 <p align="center">
-  <img src="https://ginomessmer-readme.azurewebsites.net/api/Hits?code=Ltub4CgkGsrRaJFgB6wVOsXlYANzQDDyG0TFamIxw5sdcICyuF1paw==">
+  <img src="ginomessmer-readme.azurewebsites.net/api/HitsBadge?code=SPHMXVVam/SBorjxz9DXhzXTIziWTB0ni8s2y6jo6/OD7SURpM00vQ==">
 </p>
 
 ---

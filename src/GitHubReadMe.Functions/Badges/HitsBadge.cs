@@ -1,19 +1,16 @@
-using System;
-using System.IO;
 using System.Linq;
 using System.Net.Http;
 using System.Threading.Tasks;
 using GitHubReadMe.Functions.Common.Entities;
-using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Azure.Cosmos.Table;
 using Microsoft.Azure.WebJobs;
 using Microsoft.Azure.WebJobs.Extensions.Http;
-using Microsoft.AspNetCore.Http;
-using Microsoft.Azure.Cosmos.Table;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Logging;
 
-namespace GitHubReadMe.Functions.Hits
+namespace GitHubReadMe.Functions.Badges
 {
     public class HitsBadge
     {
