@@ -1,5 +1,6 @@
 using System.Linq;
 using System.Net.Http;
+using System.Net.Http.Headers;
 using System.Threading.Tasks;
 using GitHubReadMe.Functions.Common.Entities;
 using Microsoft.AspNetCore.Http;
@@ -41,6 +42,8 @@ namespace GitHubReadMe.Functions.Badges
             {
                 // Proxy response
                 var stream = await httpClient.GetStreamAsync($"https://img.shields.io/badge/views-{count}-green");
+
+                req.HttpContext.Response.Headers.Add("Cache-Control", "s-maxage=1, stale-while-revalidate");
                 return new FileStreamResult(stream, "image/svg+xml");
             }
         }

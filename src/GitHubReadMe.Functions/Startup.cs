@@ -13,7 +13,7 @@ namespace GitHubReadMe.Functions
         {
             var configuration = new ConfigurationBuilder()
                 .SetBasePath(Environment.CurrentDirectory)
-                .AddJsonFile("local.settings.json")
+                .AddJsonFile("local.settings.json", true)
                 .AddJsonFile("appsettings.json", true)
                 .AddUserSecrets(GetType().Assembly, true)
                 .AddEnvironmentVariables()
