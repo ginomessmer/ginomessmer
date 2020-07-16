@@ -1,5 +1,6 @@
 using System;
 using System.IO;
+using System.Linq;
 using System.Threading.Tasks;
 using GitHubReadMe.Functions.Common.Entities;
 using Microsoft.AspNetCore.Hosting;
@@ -35,8 +36,9 @@ namespace GitHubReadMe.Functions.Hits
 
             log.LogInformation("Hit recorded");
 
-            // TODO: Return badge with hit count
-            return new OkResult();
+            // Retrieve current count
+            var count = table.ExecuteQuery(new TableQuery()).Count();
+            return new RedirectResult($"https://img.shields.io/badge/views-{count}-green", false);
         }
     }
 }
