@@ -1,6 +1,0 @@
-export const {
-  API_SECRET,
-  SPOTIFY_CLIENT_ID,
-  SPOTIFY_CLIENT_SECRET,
-  SPOTIFY_REFRESH_TOKEN,
-} = process.env;
