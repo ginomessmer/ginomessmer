@@ -23,3 +23,15 @@ jobs:
       run: dotnet build ./src --configuration Release --no-restore
     - name: Test
       run: dotnet test ./src --no-restore --verbosity normal
+    - name: Publish
+      run: dotnet publish ./src -o ./dist --configuration Release --no-restore
+    - name: Deploy
+      uses: Azure/functions-action@v1.1.4
+      with:
+        app-name: ginomessmer-readme
+        package: ./dist
+        publish-profile: ${{secrets.AZURE_PUBLISH_PROFILE}}
+    - name: Upload Artifdact
+      uses: actions/upload-artifact@v2
+      with:
+        path: ./dist
