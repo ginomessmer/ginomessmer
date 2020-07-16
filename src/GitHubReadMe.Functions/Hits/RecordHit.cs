@@ -7,11 +7,9 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.Azure.WebJobs;
 using Microsoft.Azure.WebJobs.Extensions.Http;
 using Microsoft.AspNetCore.Http;
+using Microsoft.Azure.Cosmos.Table;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Logging;
-using Microsoft.WindowsAzure.Storage;
-using Microsoft.WindowsAzure.Storage.Table;
-using Newtonsoft.Json;
 
 namespace GitHubReadMe.Functions.Hits
 {
@@ -27,13 +25,9 @@ namespace GitHubReadMe.Functions.Hits
         [FunctionName("RecordHit")]
         public async Task<IActionResult> Run(
             [HttpTrigger(AuthorizationLevel.Function, "get", "post", Route = null)] HttpRequest req,
+            [Table("GhRmHits")] CloudTable table,
             ILogger log)
         {
-            var connectionString = _configuration.GetConnectionString("DefaultStorageAccount");
-            var storageAccount = CloudStorageAccount.Parse(connectionString);
-            var client = storageAccount.CreateCloudTableClient();
-            var table = client.GetTableReference("hits");
-            
             await table.CreateIfNotExistsAsync();
 
             var insertOperation = TableOperation.Insert(new Hit());
