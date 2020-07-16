@@ -14,16 +14,16 @@ using Microsoft.Extensions.Logging;
 
 namespace GitHubReadMe.Functions.Hits
 {
-    public class RecordHit
+    public class Hits
     {
         private readonly IConfiguration _configuration;
 
-        public RecordHit(IConfiguration configuration)
+        public Hits(IConfiguration configuration)
         {
             _configuration = configuration;
         }
 
-        [FunctionName("RecordHit")]
+        [FunctionName("Hits")]
         public async Task<IActionResult> Run(
             [HttpTrigger(AuthorizationLevel.Function, "get", "post", Route = null)] HttpRequest req,
             [Table("GhRmHits")] CloudTable table,
