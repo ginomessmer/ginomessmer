@@ -3,6 +3,9 @@
     "storage1": {
       "type": "storage",
       "connectionId": "DefaultStorageAccount"
+    },
+    "secrets1": {
+      "type": "secrets"
     }
   }
 }

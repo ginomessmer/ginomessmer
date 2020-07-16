@@ -1,6 +1,7 @@
 using System;
 using System.IO;
 using System.Linq;
+using System.Net.Http;
 using System.Threading.Tasks;
 using GitHubReadMe.Functions.Common.Entities;
 using Microsoft.AspNetCore.Hosting;
@@ -14,16 +15,16 @@ using Microsoft.Extensions.Logging;
 
 namespace GitHubReadMe.Functions.Hits
 {
-    public class Hits
+    public class HitsBadge
     {
         private readonly IConfiguration _configuration;
 
-        public Hits(IConfiguration configuration)
+        public HitsBadge(IConfiguration configuration)
         {
             _configuration = configuration;
         }
 
-        [FunctionName("Hits")]
+        [FunctionName("HitsBadge")]
         public async Task<IActionResult> Run(
             [HttpTrigger(AuthorizationLevel.Function, "get", "post", Route = null)] HttpRequest req,
             [Table("GhRmHits")] CloudTable table,
@@ -38,7 +39,13 @@ namespace GitHubReadMe.Functions.Hits
 
             // Retrieve current count
             var count = table.ExecuteQuery(new TableQuery()).Count();
-            return new RedirectResult($"https://img.shields.io/badge/views-{count}-green", false);
+
+            using (var httpClient = new HttpClient())
+            {
+                // Proxy response
+                var stream = await httpClient.GetStreamAsync($"https://img.shields.io/badge/views-{count}-green");
+                return new FileStreamResult(stream, "image/svg+xml");
+            }
         }
     }
 }
