@@ -1,34 +1,60 @@
+using System;
 using System.IO;
+using System.Net.Http;
+using System.Text.Json;
 using System.Threading.Tasks;
+using GitHubReadMe.Functions.Common.Options;
+using GitHubReadMe.Functions.Common.Results;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Azure.WebJobs;
 using Microsoft.Azure.WebJobs.Extensions.Http;
 using Microsoft.Extensions.Logging;
+using Microsoft.Extensions.Options;
 using Newtonsoft.Json;
 
 namespace GitHubReadMe.Functions.Shields
 {
-    public static class SpotifyShield
+    public class SpotifyShield
     {
+        private readonly SpotifyOptions _options;
+
+        public SpotifyShield(IOptions<SpotifyOptions> options)
+        {
+            _options = options.Value;
+        }
+
         [FunctionName("SpotifyShield")]
-        public static async Task<IActionResult> Run(
+        public async Task<IActionResult> Run(
             [HttpTrigger(AuthorizationLevel.Function, "get", "post", Route = "shields/spotify")] HttpRequest req,
             ILogger log)
         {
-            log.LogInformation("C# HTTP trigger function processed a request.");
+            try
+            {
+                using var httpClient = new HttpClient()
+                {
+                    DefaultRequestHeaders =
+                    {
+                        {
+                            "Authorization",
+                            $"Bearer {_options.AccessToken}"
+                        }
+                    }
+                };
 
-            string name = req.Query["name"];
+                var json = await httpClient.GetStringAsync("https://api.spotify.com/v1/me/player/currently-playing");
+                var doc = JsonDocument.Parse(json);
 
-            string requestBody = await new StreamReader(req.Body).ReadToEndAsync();
-            dynamic data = JsonConvert.DeserializeObject(requestBody);
-            name = name ?? data?.name;
+                var artist = doc.RootElement.GetProperty("item").GetProperty("artists")[0].GetProperty("name").GetString();
+                var track = doc.RootElement.GetProperty("item").GetProperty("name").GetString();
 
-            string responseMessage = string.IsNullOrEmpty(name)
-                ? "This HTTP triggered function executed successfully. Pass a name in the query string or in the request body for a personalized response."
-                : $"Hello, {name}. This HTTP triggered function executed successfully.";
-
-            return new OkObjectResult(responseMessage);
+                return new ShieldResult("spotify", $"{artist}: {track}", "green");
+            }
+            catch (Exception ex)
+            {
+                log.LogError(ex, "Error while fetching Spotify playback");
+                return new ShieldResult("spotify", "n/a");
+            }
         }
     }
 }

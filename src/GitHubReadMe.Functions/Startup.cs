@@ -1,5 +1,6 @@
 ﻿using System;
 using GitHubReadMe.Functions;
+using GitHubReadMe.Functions.Common.Options;
 using Microsoft.Azure.Functions.Extensions.DependencyInjection;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -18,6 +19,9 @@ namespace GitHubReadMe.Functions
                 .AddUserSecrets(GetType().Assembly, true)
                 .AddEnvironmentVariables()
                 .Build();
+
+            builder.Services.AddOptions();
+            builder.Services.Configure<SpotifyOptions>(configuration.GetSection("Spotify"));
 
             builder.Services.AddSingleton<IConfiguration>(configuration);
             builder.Services.AddOptions();
