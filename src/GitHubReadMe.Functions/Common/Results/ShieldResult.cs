@@ -34,7 +34,7 @@ namespace GitHubReadMe.Functions.Common.Results
             using var httpClient = new HttpClient();
             context.HttpContext.Response.Headers.Add("Cache-Control", "s-maxage=1, stale-while-revalidate");
 
-            var url = $"https://img.shields.io/badge/{Title}-{Value}-{Color}";
+            var url = $"https://img.shields.io/badge/{SafeShieldsEscape(Title)}-{SafeShieldsEscape(Value)}-{Color}";
             url = QueryHelpers.AddQueryString(url, "logo", Logo);
 
             var stream = await httpClient.GetStreamAsync(url);
@@ -42,5 +42,9 @@ namespace GitHubReadMe.Functions.Common.Results
 
             await result.ExecuteResultAsync(context);
         }
+
+        public static string SafeShieldsEscape(string input) => input
+            .Replace("-", "--")
+            .Replace("_", "__");
     }
 }

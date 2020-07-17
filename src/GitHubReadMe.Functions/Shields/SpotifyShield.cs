@@ -51,7 +51,7 @@ namespace GitHubReadMe.Functions.Shields
                 var artist = jsonDocument.RootElement.GetProperty("item").GetProperty("artists")[0].GetProperty("name").GetString();
                 var track = jsonDocument.RootElement.GetProperty("item").GetProperty("name").GetString();
 
-                return new ShieldResult("listening to", $"{SafeShieldsEscape(artist)} -- {SafeShieldsEscape(track)}", 
+                return new ShieldResult("listening to", $"{artist} -- {track}", 
                     "brightgreen", "spotify");
             }
             catch (Exception ex)
@@ -60,9 +60,5 @@ namespace GitHubReadMe.Functions.Shields
                 return new ShieldResult("listening to", "n/a");
             }
         }
-
-        public static string SafeShieldsEscape(string input) => input
-            .Replace("-", "--")
-            .Replace("_", "__");
     }
 }
