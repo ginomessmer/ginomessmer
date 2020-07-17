@@ -49,7 +49,7 @@ namespace GitHubReadMe.Functions.Spotify
                 })
             };
 
-            request.Headers.Add(HeaderNames.Authorization, basicAuthHeaderValue);
+            request.Headers.Add(HeaderNames.Authorization, $"Basic {basicAuthHeaderValue}");
 
             var response = await httpClient.SendAsync(request);
             response.EnsureSuccessStatusCode();
