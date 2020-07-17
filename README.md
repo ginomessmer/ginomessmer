@@ -3,7 +3,7 @@
 <p align="center">Hi there! I'm Gino - a computer science student and a full-stack software engineer at <a href="https://www.media-lesson.com/">medialesson</a>.</p>
 <p align="center">
   <img src="https://github.com/ginomessmer/ginomessmer/workflows/.NET%20Core/badge.svg">
-  <img src="https://ginomessmer-readme.azurewebsites.net/api/HitsBadge?code=awjSGXLDZIe5P1MJmGqSRuBR0OfyfAXK5J/uTTlrvv98rwVcbt/cqg==">
+  <img src="https://ginomessmer-readme.azurewebsites.net/api/shields/hits?code=ksvWWu/biPDvgEnt4PlsPFyt5a/GMOlIcMcj6XAKIN9Ckys7DbGarg==">
 </p>
 
 ---
