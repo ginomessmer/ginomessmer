@@ -35,34 +35,32 @@ namespace GitHubReadMe.Functions.Spotify
         public async Task Run([TimerTrigger("0 */30 * * * *", RunOnStartup = true)] TimerInfo timer,
             ILogger log)
         {
-            var basicAuthValue = Convert.ToBase64String(Encoding.UTF8.GetBytes($"{_options.ClientId}:{_options.ClientSecret}"));
+            // Generate basic auth header value
+            var basicAuthHeaderValue = Convert.ToBase64String(Encoding.UTF8.GetBytes($"{_options.ClientId}:{_options.ClientSecret}"));
 
-            using (var httpClient = new HttpClient())
+            // Prepare request
+            using var httpClient = new HttpClient();
+            var request = new HttpRequestMessage(HttpMethod.Post, "https://accounts.spotify.com/api/token")
             {
-                var request = new HttpRequestMessage(HttpMethod.Post,
-                    "https://accounts.spotify.com/api/token")
+                Content = new FormUrlEncodedContent( new[]
                 {
-                    Content = new FormUrlEncodedContent(new[]
-                    {
-                        new KeyValuePair<string, string>("grant_type", "refresh_token"),
-                        new KeyValuePair<string, string>("refresh_token", _options.RefreshToken)
-                    }),
-                    Headers =
-                    {
-                        { HeaderNames.Authorization, $"Basic {basicAuthValue}" }
-                    }
-                };
+                    new KeyValuePair<string, string>("grant_type", "refresh_token"),
+                    new KeyValuePair<string, string>("refresh_token", _options.RefreshToken)
+                })
+            };
 
-                var response = await httpClient.SendAsync(request);
-                response.EnsureSuccessStatusCode();
+            request.Headers.Add(HeaderNames.Authorization, basicAuthHeaderValue);
 
-                var jsonDocument = await JsonDocument.ParseAsync(await response.Content.ReadAsStreamAsync());
-                var accessToken = jsonDocument.RootElement.GetProperty("access_token").GetString();
+            var response = await httpClient.SendAsync(request);
+            response.EnsureSuccessStatusCode();
+
+            // Get access token
+            var jsonDocument = await JsonDocument.ParseAsync(await response.Content.ReadAsStreamAsync());
+            var accessToken = jsonDocument.RootElement.GetProperty("access_token").GetString();
                 
-                // Save in vault
-                await _secretClient.SetSecretAsync(SpotifyAccessTokenSecretName, accessToken);
-                log.LogInformation("Spotify access token refreshed");
-            }
+            // Save in vault
+            await _secretClient.SetSecretAsync(SpotifyAccessTokenSecretName, accessToken);
+            log.LogInformation("Spotify access token refreshed");
         }
     }
 }

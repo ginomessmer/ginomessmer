@@ -13,8 +13,11 @@ namespace GitHubReadMe.Functions.Common.Results
     public class ShieldResult : IActionResult
     {
         public string Title { get; set; }
+
         public string Value { get; set; }
+
         public string Color { get; set; }
+
         public string Logo { get; set; }
 
 

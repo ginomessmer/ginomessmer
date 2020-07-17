@@ -31,26 +31,25 @@ namespace GitHubReadMe.Functions.Shields
             [HttpTrigger(AuthorizationLevel.Function, "get", Route = "shields/spotify")] HttpRequest req,
             ILogger log)
         {
+            var accessToken = (await _secretClient.GetSecretAsync(RefreshSpotifyAccessToken.SpotifyAccessTokenSecretName)).Value.Value;
+
             try
             {
-                var accessToken = (await _secretClient.GetSecretAsync(RefreshSpotifyAccessToken.SpotifyAccessTokenSecretName)).Value.Value;
-
-                using var httpClient = new HttpClient()
+                using var httpClient = new HttpClient
                 {
                     DefaultRequestHeaders =
                     {
                         {
-                            "Authorization",
-                            $"Bearer {accessToken}"
+                            "Authorization", $"Bearer {accessToken}"
                         }
                     }
                 };
 
                 var json = await httpClient.GetStringAsync("https://api.spotify.com/v1/me/player/currently-playing");
-                var doc = JsonDocument.Parse(json);
+                var jsonDocument = JsonDocument.Parse(json);
 
-                var artist = doc.RootElement.GetProperty("item").GetProperty("artists")[0].GetProperty("name").GetString();
-                var track = doc.RootElement.GetProperty("item").GetProperty("name").GetString();
+                var artist = jsonDocument.RootElement.GetProperty("item").GetProperty("artists")[0].GetProperty("name").GetString();
+                var track = jsonDocument.RootElement.GetProperty("item").GetProperty("name").GetString();
 
                 return new ShieldResult("listening to", $"{artist} -- {track}", "brightgreen", "spotify");
             }

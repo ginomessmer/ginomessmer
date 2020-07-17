@@ -29,6 +29,7 @@ namespace GitHubReadMe.Functions.Shields
         {
             await table.CreateIfNotExistsAsync();
 
+            // Insert new hit
             var insertOperation = TableOperation.Insert(new Hit());
             await table.ExecuteAsync(insertOperation);
 
