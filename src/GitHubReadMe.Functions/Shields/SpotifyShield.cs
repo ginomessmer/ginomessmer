@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using Azure.Security.KeyVault.Secrets;
 using GitHubReadMe.Functions.Common.Options;
 using GitHubReadMe.Functions.Common.Results;
+using GitHubReadMe.Functions.Spotify;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Azure.WebJobs;
@@ -32,7 +33,7 @@ namespace GitHubReadMe.Functions.Shields
         {
             try
             {
-                var accessToken = (await _secretClient.GetSecretAsync("Spotify--AccessToken")).Value.Value;
+                var accessToken = (await _secretClient.GetSecretAsync(RefreshSpotifyToken.SpotifyAccessTokenSecretName)).Value.Value;
 
                 using var httpClient = new HttpClient()
                 {
@@ -51,12 +52,12 @@ namespace GitHubReadMe.Functions.Shields
                 var artist = doc.RootElement.GetProperty("item").GetProperty("artists")[0].GetProperty("name").GetString();
                 var track = doc.RootElement.GetProperty("item").GetProperty("name").GetString();
 
-                return new ShieldResult("spotify", $"{artist}: {track}", "green");
+                return new ShieldResult("listening to", $"{artist} -- {track}", "brightgreen", "spotify");
             }
             catch (Exception ex)
             {
                 log.LogError(ex, "Error while fetching Spotify playback");
-                return new ShieldResult("spotify", "n/a");
+                return new ShieldResult("listening to", "n/a");
             }
         }
     }

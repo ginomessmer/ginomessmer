@@ -37,7 +37,7 @@ namespace GitHubReadMe.Functions.Shields
             // Retrieve current count
             var count = table.ExecuteQuery(new TableQuery()).Count();
 
-            return new ShieldResult("views", count.ToString(), "green");
+            return new ShieldResult("views", count.ToString(), "informational");
         }
     }
 }

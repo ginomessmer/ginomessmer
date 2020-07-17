@@ -20,6 +20,8 @@ namespace GitHubReadMe.Functions.Spotify
 {
     public class RefreshSpotifyToken
     {
+        public const string SpotifyAccessTokenSecretName = "Spotify--AccessToken";
+
         private readonly SecretClient _secretClient;
         private SpotifyOptions _options;
 
@@ -58,7 +60,7 @@ namespace GitHubReadMe.Functions.Spotify
                 var accessToken = jsonDocument.RootElement.GetProperty("access_token").GetString();
                 
                 // Save in vault
-                await _secretClient.SetSecretAsync("Spotify--AccessToken", accessToken);
+                await _secretClient.SetSecretAsync(SpotifyAccessTokenSecretName, accessToken);
                 log.LogInformation("Spotify access token refreshed");
             }
         }
