@@ -3,6 +3,7 @@ using System.IO;
 using System.Net.Http;
 using System.Text.Json;
 using System.Threading.Tasks;
+using Azure.Security.KeyVault.Secrets;
 using GitHubReadMe.Functions.Common.Options;
 using GitHubReadMe.Functions.Common.Results;
 using Microsoft.AspNetCore.Http;
@@ -17,27 +18,29 @@ namespace GitHubReadMe.Functions.Shields
 {
     public class SpotifyShield
     {
-        private readonly SpotifyOptions _options;
+        private readonly SecretClient _secretClient;
 
-        public SpotifyShield(IOptions<SpotifyOptions> options)
+        public SpotifyShield(SecretClient secretClient)
         {
-            _options = options.Value;
+            _secretClient = secretClient;
         }
 
         [FunctionName("SpotifyShield")]
         public async Task<IActionResult> Run(
-            [HttpTrigger(AuthorizationLevel.Function, "get", "post", Route = "shields/spotify")] HttpRequest req,
+            [HttpTrigger(AuthorizationLevel.Function, "get", Route = "shields/spotify")] HttpRequest req,
             ILogger log)
         {
             try
             {
+                var accessToken = (await _secretClient.GetSecretAsync("Spotify--AccessToken")).Value.Value;
+
                 using var httpClient = new HttpClient()
                 {
                     DefaultRequestHeaders =
                     {
                         {
                             "Authorization",
-                            $"Bearer {_options.AccessToken}"
+                            $"Bearer {accessToken}"
                         }
                     }
                 };

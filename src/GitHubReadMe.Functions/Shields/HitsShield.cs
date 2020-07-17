@@ -23,7 +23,7 @@ namespace GitHubReadMe.Functions.Shields
 
         [FunctionName("HitsShield")]
         public async Task<IActionResult> Run(
-            [HttpTrigger(AuthorizationLevel.Function, "get", "post", Route = "shields/hits")] HttpRequest req,
+            [HttpTrigger(AuthorizationLevel.Function, "get", Route = "shields/hits")] HttpRequest req,
             [Table("GhRmHits")] CloudTable table,
             ILogger log)
         {
