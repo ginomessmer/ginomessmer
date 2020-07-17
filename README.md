@@ -4,6 +4,7 @@
 <p align="center">
   <img src="https://github.com/ginomessmer/ginomessmer/workflows/.NET%20Core/badge.svg">
   <img src="https://ginomessmer-readme.azurewebsites.net/api/shields/hits?code=ksvWWu/biPDvgEnt4PlsPFyt5a/GMOlIcMcj6XAKIN9Ckys7DbGarg==">
+  <img src="https://ginomessmer-readme.azurewebsites.net/api/shields/spotify?code=LLBkwMSPGugcg8vuOaH6UQdYfBhmfAJahrxJui95I7fFgT6K/dzNGg==">
 </p>
 
 ---
