@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Net.Http;
 using System.Net.WebSockets;
 using System.Threading.Tasks;
 using Azure.Identity;
@@ -9,6 +10,8 @@ using Microsoft.Azure.Functions.Extensions.DependencyInjection;
 using Microsoft.Azure.KeyVault;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using SteamWebAPI2.Interfaces;
+using SteamWebAPI2.Utilities;
 
 [assembly: FunctionsStartup(typeof(Startup))]
 namespace GitHubReadMe.Functions
@@ -25,16 +28,21 @@ namespace GitHubReadMe.Functions
                 .AddEnvironmentVariables()
                 .Build();
 
+            // Options
+            builder.Services.AddOptions();
+            builder.Services.AddSingleton<IConfiguration>(configuration);
+            builder.Services.Configure<SpotifyOptions>(configuration.GetSection("Spotify"));
+            builder.Services.Configure<SteamOptions>(configuration.GetSection("Steam"));
+
+            // Key vault
             builder.Services.AddSingleton(new SecretClient(new Uri(configuration["KeyVault:VaultUri"]), 
                 new ClientSecretCredential(configuration["KeyVault:TenantId"], 
                     configuration["KeyVault:ClientId"], 
                     configuration["KeyVault:ClientSecret"])));
 
-            builder.Services.AddOptions();
-            builder.Services.Configure<SpotifyOptions>(configuration.GetSection("Spotify"));
-
-            builder.Services.AddSingleton<IConfiguration>(configuration);
-            builder.Services.AddOptions();
+            // Steam
+            builder.Services.AddSingleton<ISteamUser>(new SteamWebInterfaceFactory(configuration["Steam:WebApiKey"])
+                .CreateSteamWebInterface<SteamUser>(new HttpClient()));
         }
     }
 }

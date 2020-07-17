@@ -20,6 +20,9 @@ namespace GitHubReadMe.Functions.Common.Results
 
         public string Logo { get; set; }
 
+        public ShieldResult()
+        {
+        }
 
         public ShieldResult(string title, string value, string color = "inactive", string logo = "")
         {
