@@ -18,20 +18,20 @@ using Microsoft.Net.Http.Headers;
 
 namespace GitHubReadMe.Functions.Spotify
 {
-    public class RefreshSpotifyToken
+    public class RefreshSpotifyAccessToken
     {
         public const string SpotifyAccessTokenSecretName = "Spotify--AccessToken";
 
         private readonly SecretClient _secretClient;
         private SpotifyOptions _options;
 
-        public RefreshSpotifyToken(IOptions<SpotifyOptions> options, SecretClient secretClient)
+        public RefreshSpotifyAccessToken(IOptions<SpotifyOptions> options, SecretClient secretClient)
         {
             _secretClient = secretClient;
             _options = options.Value;
         }
 
-        [FunctionName("RefreshSpotifyToken")]
+        [FunctionName(nameof(RefreshSpotifyAccessToken))]
         public async Task Run([TimerTrigger("0 */30 * * * *", RunOnStartup = true)] TimerInfo timer,
             ILogger log)
         {

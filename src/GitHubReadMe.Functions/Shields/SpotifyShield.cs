@@ -33,7 +33,7 @@ namespace GitHubReadMe.Functions.Shields
         {
             try
             {
-                var accessToken = (await _secretClient.GetSecretAsync(RefreshSpotifyToken.SpotifyAccessTokenSecretName)).Value.Value;
+                var accessToken = (await _secretClient.GetSecretAsync(RefreshSpotifyAccessToken.SpotifyAccessTokenSecretName)).Value.Value;
 
                 using var httpClient = new HttpClient()
                 {
