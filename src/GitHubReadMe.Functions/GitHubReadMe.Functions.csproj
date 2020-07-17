@@ -5,7 +5,7 @@
     <UserSecretsId>d68cf6f2-f93c-4c56-bd87-966e4d0f9761</UserSecretsId>
   </PropertyGroup>
   <ItemGroup>
-    <None Remove="Badges\RecordHit.cs~RF17e60da.TMP" />
+    <None Remove="Shields\RecordHit.cs~RF17e60da.TMP" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Microsoft.Azure.Functions.Extensions" Version="1.0.0" />
