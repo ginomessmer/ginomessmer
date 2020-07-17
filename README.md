@@ -2,9 +2,10 @@
 <h1 align="center">Gino Messmer</h1>
 <p align="center">Hi there! I'm Gino - a computer science student and a full-stack software engineer at <a href="https://www.media-lesson.com/">medialesson</a>.</p>
 <p align="center">
-  <img src="https://github.com/ginomessmer/ginomessmer/workflows/.NET%20Core/badge.svg">
-  <img src="https://ginomessmer-readme.azurewebsites.net/api/shields/hits?code=ksvWWu/biPDvgEnt4PlsPFyt5a/GMOlIcMcj6XAKIN9Ckys7DbGarg==">
+  <img src="https://ginomessmer-readme.azurewebsites.net/api/shields/hits?code=ksvWWu/biPDvgEnt4PlsPFyt5a/GMOlIcMcj6XAKIN9Ckys7DbGarg=="> 
   <img src="https://ginomessmer-readme.azurewebsites.net/api/shields/spotify?code=LLBkwMSPGugcg8vuOaH6UQdYfBhmfAJahrxJui95I7fFgT6K/dzNGg==">
+  <br>
+  <img src="https://github.com/ginomessmer/ginomessmer/workflows/.NET%20Core/badge.svg">
 </p>
 
 ---
