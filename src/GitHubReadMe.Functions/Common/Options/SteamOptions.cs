@@ -4,6 +4,6 @@
     {
         public string WebApiKey { get; set; }
 
-        public ulong SteamId { get; set; } = 76561198083519232;
+        public ulong SteamId { get; set; }
     }
 }
