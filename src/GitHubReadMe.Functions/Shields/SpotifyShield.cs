@@ -8,6 +8,7 @@ using Microsoft.Azure.WebJobs.Extensions.Http;
 using Microsoft.Extensions.Logging;
 using System;
 using System.Net.Http;
+using System.Net.Http.Headers;
 using System.Text.Json;
 using System.Threading.Tasks;
 
@@ -31,15 +32,8 @@ namespace GitHubReadMe.Functions.Shields
 
             try
             {
-                using var httpClient = new HttpClient
-                {
-                    DefaultRequestHeaders =
-                    {
-                        {
-                            "Authorization", $"Bearer {accessToken}"
-                        }
-                    }
-                };
+                using var httpClient = new HttpClient();
+                httpClient.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("bearer", accessToken);
 
                 var json = await httpClient.GetStringAsync("https://api.spotify.com/v1/me/player/currently-playing");
                 var jsonDocument = JsonDocument.Parse(json);

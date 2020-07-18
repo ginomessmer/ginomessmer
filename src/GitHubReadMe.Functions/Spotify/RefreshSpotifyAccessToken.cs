@@ -7,6 +7,7 @@ using Microsoft.Net.Http.Headers;
 using System;
 using System.Collections.Generic;
 using System.Net.Http;
+using System.Net.Http.Headers;
 using System.Text;
 using System.Text.Json;
 using System.Threading.Tasks;
@@ -44,7 +45,7 @@ namespace GitHubReadMe.Functions.Spotify
                 })
             };
 
-            request.Headers.Add(HeaderNames.Authorization, $"Basic {basicAuthHeaderValue}");
+            request.Headers.Authorization = new AuthenticationHeaderValue("Basic", basicAuthHeaderValue);
 
             var response = await httpClient.SendAsync(request);
             response.EnsureSuccessStatusCode();
