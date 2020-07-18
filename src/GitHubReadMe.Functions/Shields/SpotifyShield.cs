@@ -33,7 +33,7 @@ namespace GitHubReadMe.Functions.Shields
             try
             {
                 using var httpClient = new HttpClient();
-                httpClient.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("bearer", accessToken);
+                httpClient.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", accessToken);
 
                 var json = await httpClient.GetStringAsync("https://api.spotify.com/v1/me/player/currently-playing");
                 var jsonDocument = JsonDocument.Parse(json);
