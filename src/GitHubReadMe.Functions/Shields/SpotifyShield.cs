@@ -47,7 +47,7 @@ namespace GitHubReadMe.Functions.Shields
             catch (Exception ex)
             {
                 log.LogError(ex, "Error while fetching Spotify playback");
-                return new ShieldResult("listening to", "n/a");
+                return new ShieldResult("listening to", "n/a", logo: "spotify");
             }
         }
     }
