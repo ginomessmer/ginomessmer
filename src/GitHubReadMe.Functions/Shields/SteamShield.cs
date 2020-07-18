@@ -1,16 +1,13 @@
-using System;
-using System.IO;
-using System.Threading.Tasks;
 using GitHubReadMe.Functions.Common.Options;
 using GitHubReadMe.Functions.Common.Results;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Azure.WebJobs;
 using Microsoft.Azure.WebJobs.Extensions.Http;
-using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
-using Newtonsoft.Json;
 using SteamWebAPI2.Interfaces;
+using System.Threading.Tasks;
 
 namespace GitHubReadMe.Functions.Shields
 {

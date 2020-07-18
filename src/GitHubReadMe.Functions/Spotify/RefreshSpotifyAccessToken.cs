@@ -1,20 +1,15 @@
+using Azure.Security.KeyVault.Secrets;
+using GitHubReadMe.Functions.Common.Options;
+using Microsoft.Azure.WebJobs;
+using Microsoft.Extensions.Logging;
+using Microsoft.Extensions.Options;
+using Microsoft.Net.Http.Headers;
 using System;
-using System.Buffers.Text;
 using System.Collections.Generic;
 using System.Net.Http;
 using System.Text;
 using System.Text.Json;
 using System.Threading.Tasks;
-using Azure.Security.KeyVault.Secrets;
-using GitHubReadMe.Functions.Common.Options;
-using Microsoft.AspNetCore.Http;
-using Microsoft.Azure.KeyVault;
-using Microsoft.Azure.WebJobs;
-using Microsoft.Azure.WebJobs.Extensions.Http;
-using Microsoft.Azure.WebJobs.Host;
-using Microsoft.Extensions.Logging;
-using Microsoft.Extensions.Options;
-using Microsoft.Net.Http.Headers;
 
 namespace GitHubReadMe.Functions.Spotify
 {
@@ -42,7 +37,7 @@ namespace GitHubReadMe.Functions.Spotify
             using var httpClient = new HttpClient();
             var request = new HttpRequestMessage(HttpMethod.Post, "https://accounts.spotify.com/api/token")
             {
-                Content = new FormUrlEncodedContent( new[]
+                Content = new FormUrlEncodedContent(new[]
                 {
                     new KeyValuePair<string, string>("grant_type", "refresh_token"),
                     new KeyValuePair<string, string>("refresh_token", _options.RefreshToken)
@@ -57,7 +52,7 @@ namespace GitHubReadMe.Functions.Spotify
             // Get access token
             var jsonDocument = await JsonDocument.ParseAsync(await response.Content.ReadAsStreamAsync());
             var accessToken = jsonDocument.RootElement.GetProperty("access_token").GetString();
-                
+
             // Save in vault
             await _secretClient.SetSecretAsync(SpotifyAccessTokenSecretName, accessToken);
             log.LogInformation("Spotify access token refreshed");

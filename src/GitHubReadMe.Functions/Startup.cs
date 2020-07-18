@@ -1,17 +1,14 @@
-﻿using System;
-using System.Net.Http;
-using System.Net.WebSockets;
-using System.Threading.Tasks;
-using Azure.Identity;
+﻿using Azure.Identity;
 using Azure.Security.KeyVault.Secrets;
 using GitHubReadMe.Functions;
 using GitHubReadMe.Functions.Common.Options;
 using Microsoft.Azure.Functions.Extensions.DependencyInjection;
-using Microsoft.Azure.KeyVault;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using SteamWebAPI2.Interfaces;
 using SteamWebAPI2.Utilities;
+using System;
+using System.Net.Http;
 
 [assembly: FunctionsStartup(typeof(Startup))]
 namespace GitHubReadMe.Functions
@@ -35,9 +32,9 @@ namespace GitHubReadMe.Functions
             builder.Services.Configure<SteamOptions>(configuration.GetSection("Steam"));
 
             // Key vault
-            builder.Services.AddSingleton(new SecretClient(new Uri(configuration["KeyVault:VaultUri"]), 
-                new ClientSecretCredential(configuration["KeyVault:TenantId"], 
-                    configuration["KeyVault:ClientId"], 
+            builder.Services.AddSingleton(new SecretClient(new Uri(configuration["KeyVault:VaultUri"]),
+                new ClientSecretCredential(configuration["KeyVault:TenantId"],
+                    configuration["KeyVault:ClientId"],
                     configuration["KeyVault:ClientSecret"])));
 
             // Steam

@@ -1,5 +1,3 @@
-using System.Linq;
-using System.Threading.Tasks;
 using GitHubReadMe.Functions.Common.Entities;
 using GitHubReadMe.Functions.Common.Results;
 using Microsoft.AspNetCore.Http;
@@ -9,6 +7,8 @@ using Microsoft.Azure.WebJobs;
 using Microsoft.Azure.WebJobs.Extensions.Http;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Logging;
+using System.Linq;
+using System.Threading.Tasks;
 
 namespace GitHubReadMe.Functions.Shields
 {

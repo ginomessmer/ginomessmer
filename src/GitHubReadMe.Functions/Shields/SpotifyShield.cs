@@ -1,10 +1,4 @@
-using System;
-using System.IO;
-using System.Net.Http;
-using System.Text.Json;
-using System.Threading.Tasks;
 using Azure.Security.KeyVault.Secrets;
-using GitHubReadMe.Functions.Common.Options;
 using GitHubReadMe.Functions.Common.Results;
 using GitHubReadMe.Functions.Spotify;
 using Microsoft.AspNetCore.Http;
@@ -12,8 +6,10 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.Azure.WebJobs;
 using Microsoft.Azure.WebJobs.Extensions.Http;
 using Microsoft.Extensions.Logging;
-using Microsoft.Extensions.Options;
-using Newtonsoft.Json;
+using System;
+using System.Net.Http;
+using System.Text.Json;
+using System.Threading.Tasks;
 
 namespace GitHubReadMe.Functions.Shields
 {
@@ -51,7 +47,7 @@ namespace GitHubReadMe.Functions.Shields
                 var artist = jsonDocument.RootElement.GetProperty("item").GetProperty("artists")[0].GetProperty("name").GetString();
                 var track = jsonDocument.RootElement.GetProperty("item").GetProperty("name").GetString();
 
-                return new ShieldResult("listening to", $"{artist} - {track}", 
+                return new ShieldResult("listening to", $"{artist} - {track}",
                     "brightgreen", "spotify");
             }
             catch (Exception ex)
