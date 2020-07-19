@@ -9,6 +9,7 @@ using SteamWebAPI2.Interfaces;
 using SteamWebAPI2.Utilities;
 using System;
 using System.Net.Http;
+using GitHubReadMe.Functions.Common.Services;
 
 [assembly: FunctionsStartup(typeof(Startup))]
 namespace GitHubReadMe.Functions
@@ -36,6 +37,9 @@ namespace GitHubReadMe.Functions
                 new ClientSecretCredential(configuration["KeyVault:TenantId"],
                     configuration["KeyVault:ClientId"],
                     configuration["KeyVault:ClientSecret"])));
+
+            // Shields
+            builder.Services.AddSingleton<IShieldService, ShieldsIoService>();
 
             // Steam
             builder.Services.AddSingleton<ISteamUser>(new SteamWebInterfaceFactory(configuration["Steam:WebApiKey"])

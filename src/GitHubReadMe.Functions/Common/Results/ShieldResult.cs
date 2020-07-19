@@ -2,47 +2,37 @@
 using Microsoft.AspNetCore.WebUtilities;
 using System.Net.Http;
 using System.Threading.Tasks;
+using GitHubReadMe.Functions.Common.Services;
+using GitHubReadMe.Functions.Data;
 
 namespace GitHubReadMe.Functions.Common.Results
 {
     public class ShieldResult : IActionResult
     {
-        public string Title { get; set; }
-
-        public string Value { get; set; }
-
-        public string Color { get; set; }
-
-        public string Logo { get; set; }
+        public Shield Shield { get; set; }
 
         public ShieldResult()
         {
         }
 
-        public ShieldResult(string title, string value, string color = "inactive", string logo = "")
+        public ShieldResult(Shield shield)
         {
-            Title = title;
-            Value = value;
-            Color = color;
-            Logo = logo;
+            Shield = shield;
+        }
+
+        public ShieldResult(string title, string value, string color = "inactive", string logo = "") : this(new Shield(title, value, color, logo))
+        {
         }
 
         public async Task ExecuteResultAsync(ActionContext context)
         {
-            using var httpClient = new HttpClient();
+            var service = new ShieldsIoService();
+            var stream = await service.GetShieldAsync(Shield);
+
+            var result = new FileStreamResult(stream, "image/svg+xml"); 
+
             context.HttpContext.Response.Headers.Add("Cache-Control", "s-maxage=1, stale-while-revalidate");
-
-            var url = $"https://img.shields.io/badge/{SafeShieldsEscape(Title)}-{SafeShieldsEscape(Value)}-{Color}";
-            url = QueryHelpers.AddQueryString(url, "logo", Logo);
-
-            var stream = await httpClient.GetStreamAsync(url);
-            var result = new FileStreamResult(stream, "image/svg+xml");
-
             await result.ExecuteResultAsync(context);
         }
-
-        public static string SafeShieldsEscape(string input) => input
-            .Replace("-", "--")
-            .Replace("_", "__");
     }
 }
