@@ -4,7 +4,7 @@
 <p align="center">
   <img src="https://ginomessmer-readme.azurewebsites.net/api/shields/hits?code=kcGyVPt0yNREOnxuOv0/2paiVOKfzw/gc/aJT6mD6mT3RLb83yGa4Q=="> 
   <img src="https://ginomessmerreadme.blob.core.windows.net/shields/spotify.svg">
-  <img src="https://ginomessmer-readme.azurewebsites.net/api/shields/steam?code=Uu6ZQfztX4YBoeFXwRaERFlcBGybV9kdtrAet5pObTrdFakmqigbsw==">
+  <img src="https://ginomessmerreadme.blob.core.windows.net/shields/steam.svg">
   <br>
   <img src="https://github.com/ginomessmer/ginomessmer/workflows/.NET%20Core/badge.svg">
 </p>
