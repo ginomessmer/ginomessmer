@@ -25,7 +25,7 @@ namespace GitHubReadMe.Functions.Shields
         }
 
         [FunctionName("CraftSteamShield")]
-        public async Task Run([TimerTrigger("0 */20 * * * *")]TimerInfo myTimer,
+        public async Task Run([TimerTrigger("0 */20 * * * *", RunOnStartup = true)]TimerInfo myTimer,
             [Blob("shields/steam.svg", FileAccess.ReadWrite)] ICloudBlob steamShieldBlob,
             ILogger log)
         {
