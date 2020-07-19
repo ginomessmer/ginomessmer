@@ -13,6 +13,8 @@
 
 In my spare time, I love traveling, developing applications, and writing blog posts. Mostly, I roam around in the realms of **.NET, Azure, Angular, React, Docker, DevOps**, and much more. I love connecting with peers, I'm always eager to discover new technologies and sharing my knowledge with others on [Medium](https://medium.com/@ginomessmer) and [dev.to](https://dev.to/ginomessmer).
 
+[![Twitter Follow](https://img.shields.io/twitter/follow/ginomessmer?style=social)](https://twitter.com/ginomessmer)
+
 ## Key Facts
 💫 Started programming in 2010  
 ⭐ **Favorite tech**: C#, Cloud (Azure), .NET Core, Microsoft stack, Angular, React, TypeScript, Docker  
@@ -28,8 +30,9 @@ In my spare time, I love traveling, developing applications, and writing blog po
 🎶 **What I'm listening to lately**: Linkin Park, Limp Bizkit, Rise Against, Breaking Benjamin, Eminem  
 ⚡ **Fun fact**: The elites don’t want you to know this but the ducks at the park are free you can take them home I have 458 ducks.
 
-If you like what I'm doing and want to support my work, feel free to let me know and if you're extra generous, [buy me a coffee](https://www.buymeacoffee.com/ginomessmer).
+If you like what I'm doing and want to support my work, feel free to let me know and if you're extra generous, buy me a coffee.
 
+<a href="https://www.buymeacoffee.com/ginomessmer" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/default-orange.png" alt="Buy Me A Coffee" height="40px" ></a>
 
 <!--
 **ginomessmer/ginomessmer** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
