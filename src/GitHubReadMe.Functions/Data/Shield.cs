@@ -10,7 +10,7 @@
 
         public string Logo { get; set; }
 
-        public Shield(string title, string value, string color, string logo)
+        public Shield(string title, string value, string color = "inactive", string logo = "")
         {
             Title = title;
             Value = value;

@@ -5,15 +5,14 @@ using System.Net.Http.Headers;
 using System.Text.Json;
 using System.Threading.Tasks;
 using Azure.Security.KeyVault.Secrets;
-using GitHubReadMe.Functions.Common.Results;
 using GitHubReadMe.Functions.Common.Services;
 using GitHubReadMe.Functions.Data;
+using GitHubReadMe.Functions.Spotify;
 using Microsoft.Azure.Storage.Blob;
 using Microsoft.Azure.WebJobs;
-using Microsoft.Azure.WebJobs.Host;
 using Microsoft.Extensions.Logging;
 
-namespace GitHubReadMe.Functions.Spotify
+namespace GitHubReadMe.Functions.Shields
 {
     public class CraftSpotifyShield
     {
