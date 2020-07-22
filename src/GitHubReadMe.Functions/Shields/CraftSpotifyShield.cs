@@ -30,6 +30,7 @@ namespace GitHubReadMe.Functions.Shields
             [Blob("shields/spotify.svg", FileAccess.ReadWrite)] ICloudBlob spotifyShieldBlob, ILogger log)
         {
             var accessToken = (await _secretClient.GetSecretAsync(RefreshSpotifyAccessToken.SpotifyAccessTokenSecretName)).Value.Value;
+            Stream stream = new MemoryStream();
 
             try
             {
@@ -42,18 +43,21 @@ namespace GitHubReadMe.Functions.Shields
                 var artist = jsonDocument.RootElement.GetProperty("item").GetProperty("artists")[0].GetProperty("name").GetString();
                 var track = jsonDocument.RootElement.GetProperty("item").GetProperty("name").GetString();
 
-                var stream = await _shieldService.GetShieldAsync(
+                stream = await _shieldService.GetShieldAsync(
                     new Shield("listening to", $"{artist}: {track}", "brightgreen", "spotify"));
-
-                spotifyShieldBlob.Properties.ContentType = "image/svg+xml";
-                spotifyShieldBlob.Properties.CacheControl = "s-maxage=1, stale-while-revalidate"; 
-                await spotifyShieldBlob.UploadFromStreamAsync(stream);
 
             }
             catch (Exception ex)
             {
                 log.LogError(ex, "Error while fetching Spotify playback");
+
+                stream = await _shieldService.GetShieldAsync(
+                    new Shield("listening to", $"n/a", "inactive", "spotify"));
             }
+
+            spotifyShieldBlob.Properties.ContentType = "image/svg+xml";
+            spotifyShieldBlob.Properties.CacheControl = "s-maxage=1, stale-while-revalidate";
+            await spotifyShieldBlob.UploadFromStreamAsync(stream);
         }
     }
 }
