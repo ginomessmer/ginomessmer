@@ -26,7 +26,7 @@ In my spare time, I love traveling, developing applications, and writing blog po
 #### Contact
 ✉ **Reach out to me**: [Twitter](https://twitter.com/ginomessmer), [Telegram](https://t.me/ginomessmer), [Email](mailto:gino@messmerized.de)  
 📝 **Where I'm blogging**: [Medium](https://medium.com/@ginomessmer), [dev.to](https://dev.to/ginomessmer)  
-🍻 **You can speak to me in** English or German (but noth both at the same time)
+🍻 **You can speak to me in** English or German (but not both at the same time)
 
 #### Trivia
 🏙 **Favorite places so far**: London, Stockholm  
