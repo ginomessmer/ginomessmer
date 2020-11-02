@@ -18,7 +18,7 @@ In my spare time, I love traveling, developing applications, and writing blog po
 ## Key Facts
 💫 Started programming in 2010  
 ⭐ **Favorite tech**: C#, .NET Core, Microsoft Azure, DevOps, Angular, React, TypeScript, Docker  
-🌟 **Right now I'm getting into**: Machine Learning, Distributed Systems, Kubernetes
+🌟 **Right now I'm getting into**: Machine Learning, Distributed Systems, Kubernetes  
 ✨ **Want to get into**: Microsoft Azure Certification  
 💡 **Professional experience**: Software Development, Community Management
 
