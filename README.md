@@ -32,6 +32,7 @@ In my spare time, I love traveling, developing applications, and writing blog po
 🏙 **Favorite places so far**: London, Stockholm  
 🌆 **Want to visit**: New York, San Francisco  
 🎶 **What I'm listening to lately**: Linkin Park, Limp Bizkit, Rise Against, Breaking Benjamin, Eminem  
+🎮 **Favorite video games**: Red Dead Redemption II, Metro Exodus  
 ⚡ **Fun fact**: The elites don’t want you to know this but the ducks at the park are free you can take them home I have 458 ducks.
 
 ---
