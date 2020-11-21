@@ -10,7 +10,7 @@
   <img src="https://ginomessmerreadme.blob.core.windows.net/shields/steam.svg">
   <br>
   
-  <a href="https://docs.microsoft.com/users/ginomessmer/"><img src="https://ginomessmerreadme.blob.core.windows.net/shields/ms_learn.svg"></a>
+  <img src="https://ginomessmerreadme.blob.core.windows.net/shields/ms_learn.svg">
 </p>
 
 ---
