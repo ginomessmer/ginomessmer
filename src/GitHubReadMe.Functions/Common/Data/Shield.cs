@@ -1,4 +1,4 @@
-﻿namespace GitHubReadMe.Functions.Data
+﻿namespace GitHubReadMe.Functions.Common.Data
 {
     public class Shield
     {

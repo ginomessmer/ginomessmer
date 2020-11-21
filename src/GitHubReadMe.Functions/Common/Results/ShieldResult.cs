@@ -2,8 +2,8 @@
 using Microsoft.AspNetCore.WebUtilities;
 using System.Net.Http;
 using System.Threading.Tasks;
+using GitHubReadMe.Functions.Common.Data;
 using GitHubReadMe.Functions.Common.Services;
-using GitHubReadMe.Functions.Data;
 
 namespace GitHubReadMe.Functions.Common.Results
 {

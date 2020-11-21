@@ -1,8 +1,8 @@
 using System.IO;
 using System.Threading.Tasks;
+using GitHubReadMe.Functions.Common.Data;
 using GitHubReadMe.Functions.Common.Options;
 using GitHubReadMe.Functions.Common.Services;
-using GitHubReadMe.Functions.Data;
 using Microsoft.Azure.Storage.Blob;
 using Microsoft.Azure.WebJobs;
 using Microsoft.Extensions.Logging;

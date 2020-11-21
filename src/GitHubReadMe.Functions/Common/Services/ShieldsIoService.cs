@@ -4,7 +4,7 @@ using System.IO;
 using System.Net.Http;
 using System.Text;
 using System.Threading.Tasks;
-using GitHubReadMe.Functions.Data;
+using GitHubReadMe.Functions.Common.Data;
 using Microsoft.AspNetCore.WebUtilities;
 
 namespace GitHubReadMe.Functions.Common.Services

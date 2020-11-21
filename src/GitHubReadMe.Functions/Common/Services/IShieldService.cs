@@ -1,6 +1,6 @@
 ﻿using System.IO;
 using System.Threading.Tasks;
-using GitHubReadMe.Functions.Data;
+using GitHubReadMe.Functions.Common.Data;
 
 namespace GitHubReadMe.Functions.Common.Services
 {
