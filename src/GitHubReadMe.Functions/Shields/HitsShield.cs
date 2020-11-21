@@ -12,6 +12,9 @@ using System.Threading.Tasks;
 
 namespace GitHubReadMe.Functions.Shields
 {
+    /// <summary>
+    /// Creates a 'total views' shield.
+    /// </summary>
     public class HitsShield
     {
         private readonly IConfiguration _configuration;
@@ -21,6 +24,7 @@ namespace GitHubReadMe.Functions.Shields
             _configuration = configuration;
         }
 
+        /// <inheritdoc cref="HitsShield"/>
         [FunctionName("HitsShield")]
         public async Task<IActionResult> Run(
             [HttpTrigger(AuthorizationLevel.Function, "get", Route = "shields/hits")] HttpRequest req,

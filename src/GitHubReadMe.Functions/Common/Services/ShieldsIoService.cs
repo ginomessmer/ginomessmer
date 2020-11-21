@@ -11,6 +11,11 @@ namespace GitHubReadMe.Functions.Common.Services
 {
     public class ShieldsIoService : IShieldService
     {
+        /// <summary>
+        /// Retrieves a shield from shields.io.
+        /// </summary>
+        /// <param name="shield"></param>
+        /// <returns></returns>
         public async Task<Stream> GetShieldAsync(Shield shield)
         {
             using var httpClient = new HttpClient();

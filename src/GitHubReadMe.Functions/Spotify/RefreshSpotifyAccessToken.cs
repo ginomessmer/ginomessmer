@@ -14,6 +14,9 @@ using System.Threading.Tasks;
 
 namespace GitHubReadMe.Functions.Spotify
 {
+    /// <summary>
+    /// Refreshes the Spotify access token every few minutes and stores it to Key Vault.
+    /// </summary>
     public class RefreshSpotifyAccessToken
     {
         public const string SpotifyAccessTokenSecretName = "Spotify--AccessToken";

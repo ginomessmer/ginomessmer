@@ -11,6 +11,9 @@ using SteamWebAPI2.Interfaces;
 
 namespace GitHubReadMe.Functions.Shields
 {
+    /// <summary>
+    /// Creates a shield that shows the game I'm currently playing.
+    /// </summary>
     public class CraftSteamShield
     {
         private readonly ISteamUser _steamUser;
@@ -24,6 +27,7 @@ namespace GitHubReadMe.Functions.Shields
             _options = options.Value;
         }
 
+        /// <inheritdoc cref="CraftSteamShield"/>
         [FunctionName("CraftSteamShield")]
         public async Task Run([TimerTrigger("0 */30 * * * *", RunOnStartup = true)]TimerInfo myTimer,
             [Blob("shields/steam.svg", FileAccess.ReadWrite)] ICloudBlob steamShieldBlob,

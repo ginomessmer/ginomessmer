@@ -14,6 +14,9 @@ using Microsoft.Extensions.Logging;
 
 namespace GitHubReadMe.Functions.Shields
 {
+    /// <summary>
+    /// Creates a shield that displays what I'm listening on Spotify right now.
+    /// </summary>
     public class CraftSpotifyShield
     {
         private readonly SecretClient _secretClient;
@@ -25,6 +28,7 @@ namespace GitHubReadMe.Functions.Shields
             _shieldService = shieldService;
         }
 
+        /// <inheritdoc cref="CraftSpotifyShield"/>
         [FunctionName("CraftSpotifyShield")]
         public async Task Run([TimerTrigger("0 */4 * * * *", RunOnStartup = true)]TimerInfo myTimer,
             [Blob("shields/spotify.svg", FileAccess.ReadWrite)] ICloudBlob spotifyShieldBlob, ILogger log)
