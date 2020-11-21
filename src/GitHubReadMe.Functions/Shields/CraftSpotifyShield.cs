@@ -48,7 +48,7 @@ namespace GitHubReadMe.Functions.Shields
                 var track = jsonDocument.RootElement.GetProperty("item").GetProperty("name").GetString();
 
                 stream = await _shieldService.GetShieldAsync(
-                    new Shield("listening to", $"{artist}: {track}", "brightgreen", "spotify"));
+                    new Shield("listening to", $"{artist}: {track}", ShieldDefaults.BrightGreenColor, "spotify"));
 
             }
             catch (Exception ex)
@@ -56,7 +56,7 @@ namespace GitHubReadMe.Functions.Shields
                 log.LogError(ex, "Error while fetching Spotify playback");
 
                 stream = await _shieldService.GetShieldAsync(
-                    new Shield("listening to", $"n/a", "inactive", "spotify"));
+                    new Shield("listening to", $"n/a", ShieldDefaults.GreyColor, "spotify"));
             }
 
             spotifyShieldBlob.Properties.ContentType = ShieldDefaults.ContentType;

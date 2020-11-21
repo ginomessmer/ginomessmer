@@ -9,6 +9,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Logging;
 using System.Linq;
 using System.Threading.Tasks;
+using GitHubReadMe.Functions.Common.Services;
 
 namespace GitHubReadMe.Functions.Shields
 {
@@ -42,7 +43,7 @@ namespace GitHubReadMe.Functions.Shields
             // Retrieve current count
             var count = table.ExecuteQuery(new TableQuery()).Count();
 
-            return new ShieldResult("views", count.ToString(), "informational");
+            return new ShieldResult("views", count.ToString(), ShieldDefaults.BlueColor);
         }
     }
 }

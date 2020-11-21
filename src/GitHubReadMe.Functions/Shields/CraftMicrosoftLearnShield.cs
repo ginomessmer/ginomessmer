@@ -30,7 +30,7 @@ namespace GitHubReadMe.Functions.Shields
 
         /// <inheritdoc cref="CraftMicrosoftLearnShield"/>
         [FunctionName("CraftMicrosoftLearnShield")]
-        public async Task Run([TimerTrigger("0 0 0 * * *")]TimerInfo myTimer,
+        public async Task Run([TimerTrigger("0 0 0 * * *", RunOnStartup = true)]TimerInfo myTimer,
             [Blob("shields/ms_learn.svg", FileAccess.ReadWrite)] ICloudBlob msLearnShieldBlob, ILogger log)
         {
             Stream stream = new MemoryStream();
@@ -51,7 +51,7 @@ namespace GitHubReadMe.Functions.Shields
 
                 var shieldValue = $"Level {levelNumber} ({totalPoints}/{pointsHigh} XP)";
                 stream = await _shieldService.GetShieldAsync(new Shield("Microsoft Learn", shieldValue,
-                    "brightgreen", "microsoft"));
+                    ShieldDefaults.GreenColor, "microsoft"));
             }
             catch (Exception ex)
             {
