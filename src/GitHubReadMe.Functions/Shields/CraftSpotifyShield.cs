@@ -59,8 +59,8 @@ namespace GitHubReadMe.Functions.Shields
                     new Shield("listening to", $"n/a", "inactive", "spotify"));
             }
 
-            spotifyShieldBlob.Properties.ContentType = "image/svg+xml";
-            spotifyShieldBlob.Properties.CacheControl = "s-maxage=1, stale-while-revalidate";
+            spotifyShieldBlob.Properties.ContentType = ShieldDefaults.ContentType;
+            spotifyShieldBlob.Properties.CacheControl = ShieldDefaults.StaleCacheControl;
             await spotifyShieldBlob.UploadFromStreamAsync(stream);
         }
     }

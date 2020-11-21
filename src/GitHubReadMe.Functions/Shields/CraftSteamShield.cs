@@ -42,8 +42,8 @@ namespace GitHubReadMe.Functions.Shields
 
             var stream = await _shieldService.GetShieldAsync(shield);
 
-            steamShieldBlob.Properties.ContentType = "image/svg+xml";
-            steamShieldBlob.Properties.CacheControl = "s-maxage=1, stale-while-revalidate";
+            steamShieldBlob.Properties.ContentType = ShieldDefaults.ContentType;
+            steamShieldBlob.Properties.CacheControl = ShieldDefaults.StaleCacheControl;
             await steamShieldBlob.UploadFromStreamAsync(stream);
         }
     }

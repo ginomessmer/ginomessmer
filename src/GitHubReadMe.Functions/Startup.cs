@@ -31,6 +31,7 @@ namespace GitHubReadMe.Functions
             builder.Services.AddSingleton<IConfiguration>(configuration);
             builder.Services.Configure<SpotifyOptions>(configuration.GetSection("Spotify"));
             builder.Services.Configure<SteamOptions>(configuration.GetSection("Steam"));
+            builder.Services.Configure<MicrosoftDocsOptions>(configuration.GetSection("MicrosoftDocs"));
 
             // Key vault
             builder.Services.AddSingleton(new SecretClient(new Uri(configuration["KeyVault:VaultUri"]),

@@ -8,4 +8,10 @@ namespace GitHubReadMe.Functions.Common.Services
     {
         Task<Stream> GetShieldAsync(Shield shield);
     }
+
+    public static class ShieldDefaults
+    {
+        public const string ContentType = "image/svg+xml";
+        public const string StaleCacheControl = "s-maxage=1, stale-while-revalidate";
+    }
 }
