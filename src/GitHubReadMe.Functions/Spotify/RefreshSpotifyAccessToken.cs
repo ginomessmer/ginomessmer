@@ -3,7 +3,6 @@ using GitHubReadMe.Functions.Common.Options;
 using Microsoft.Azure.WebJobs;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
-using Microsoft.Net.Http.Headers;
 using System;
 using System.Collections.Generic;
 using System.Net.Http;

@@ -2,6 +2,7 @@
 using Azure.Security.KeyVault.Secrets;
 using GitHubReadMe.Functions;
 using GitHubReadMe.Functions.Common.Options;
+using GitHubReadMe.Functions.Common.Services;
 using Microsoft.Azure.Functions.Extensions.DependencyInjection;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -9,7 +10,6 @@ using SteamWebAPI2.Interfaces;
 using SteamWebAPI2.Utilities;
 using System;
 using System.Net.Http;
-using GitHubReadMe.Functions.Common.Services;
 
 [assembly: FunctionsStartup(typeof(Startup))]
 namespace GitHubReadMe.Functions

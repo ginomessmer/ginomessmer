@@ -1,5 +1,3 @@
-using System.IO;
-using System.Threading.Tasks;
 using GitHubReadMe.Functions.Common.Data;
 using GitHubReadMe.Functions.Common.Options;
 using GitHubReadMe.Functions.Common.Services;
@@ -8,6 +6,8 @@ using Microsoft.Azure.WebJobs;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 using SteamWebAPI2.Interfaces;
+using System.IO;
+using System.Threading.Tasks;
 
 namespace GitHubReadMe.Functions.Shields
 {

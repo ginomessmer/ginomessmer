@@ -1,15 +1,16 @@
+using Azure.Security.KeyVault.Secrets;
+using GitHubReadMe.Functions.Common.Data;
+using GitHubReadMe.Functions.Common.Services;
+using GitHubReadMe.Functions.Spotify;
+using Microsoft.Azure.Storage.Blob;
+using Microsoft.Azure.WebJobs;
+using Microsoft.Extensions.Logging;
 using System;
 using System.IO;
 using System.Net.Http;
 using System.Net.Http.Headers;
 using System.Text.Json;
 using System.Threading.Tasks;
-using Azure.Security.KeyVault.Secrets;
-using GitHubReadMe.Functions.Common.Data;
-using GitHubReadMe.Functions.Common.Services;
-using Microsoft.Azure.Storage.Blob;
-using Microsoft.Azure.WebJobs;
-using Microsoft.Extensions.Logging;
 
 namespace GitHubReadMe.Functions.Shields
 {
