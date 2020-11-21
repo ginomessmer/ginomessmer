@@ -56,7 +56,7 @@ namespace GitHubReadMe.Functions.Shields
                 log.LogError(ex, "Error while fetching Spotify playback");
 
                 stream = await _shieldService.GetShieldAsync(
-                    new Shield("listening to", $"n/a", ShieldDefaults.GreyColor, "spotify"));
+                    new Shield("listening to", $"n/a", ShieldDefaults.GreyColor, ShieldDefaults.SpotifyLogo));
             }
 
             spotifyShieldBlob.Properties.ContentType = ShieldDefaults.ContentType;

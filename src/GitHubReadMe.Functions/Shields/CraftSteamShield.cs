@@ -37,7 +37,7 @@ namespace GitHubReadMe.Functions.Shields
             var summary = response.Data;
 
             var shield = summary.PlayingGameName != null
-                ? new Shield("now playing", summary.PlayingGameName, ShieldDefaults.GreenColor, "steam")
+                ? new Shield("now playing", summary.PlayingGameName, ShieldDefaults.GreenColor, ShieldDefaults.SteamLogo)
                 : new Shield("now playing", "n/a", logo: "steam");
 
             var stream = await _shieldService.GetShieldAsync(shield);

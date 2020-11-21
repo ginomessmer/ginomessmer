@@ -23,5 +23,14 @@
         public const string BlueVioletColor = "blueviolet";
 
         #endregion
+
+
+        #region Logos
+
+        public const string MicrosoftLogo = "microsoft";
+        public const string SteamLogo = "steam";
+        public const string SpotifyLogo = "spotify";
+
+        #endregion
     }
 }

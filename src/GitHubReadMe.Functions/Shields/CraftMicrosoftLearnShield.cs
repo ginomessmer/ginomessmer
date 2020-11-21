@@ -51,7 +51,7 @@ namespace GitHubReadMe.Functions.Shields
 
                 var shieldValue = $"Level {levelNumber} ({totalPoints}/{pointsHigh} XP)";
                 stream = await _shieldService.GetShieldAsync(new Shield("Microsoft Learn", shieldValue,
-                    ShieldDefaults.GreenColor, "microsoft"));
+                    ShieldDefaults.BrightGreenColor, ShieldDefaults.MicrosoftLogo));
             }
             catch (Exception ex)
             {
