@@ -27,9 +27,9 @@ namespace GitHubReadMe.Functions.Common.Results
             var service = new ShieldsIoService();
             var stream = await service.GetShieldAsync(Shield);
 
-            var result = new FileStreamResult(stream, "image/svg+xml"); 
+            var result = new FileStreamResult(stream, ShieldDefaults.ContentType); 
 
-            context.HttpContext.Response.Headers.Add("Cache-Control", "s-maxage=1, stale-while-revalidate");
+            context.HttpContext.Response.Headers.Add("Cache-Control", ShieldDefaults.StaleCacheControl);
             await result.ExecuteResultAsync(context);
         }
     }
