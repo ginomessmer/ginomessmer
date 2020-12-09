@@ -18,6 +18,7 @@
 In my spare time, I love traveling, developing applications, and writing blog posts. Mostly, I roam around in the realms of **.NET, Azure, Angular, React, Docker, DevOps**, and much more. I love connecting with peers, I'm always eager to discover new technologies and sharing my knowledge with others on [Medium](https://medium.com/@ginomessmer) and [dev.to](https://dev.to/ginomessmer).
 
 [![Twitter Follow](https://img.shields.io/twitter/follow/ginomessmer?style=social)](https://twitter.com/ginomessmer)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn--blue?logo=linkedin&style=social)](https://www.linkedin.com/in/ginomessmer/)
 
 ## Key Facts
 #### What I'm doing
@@ -36,7 +37,7 @@ In my spare time, I love traveling, developing applications, and writing blog po
 🏙 **Favorite places so far**: London, Stockholm  
 🌆 **Want to visit**: New York, San Francisco  
 🎶 **What I'm listening to lately**: Linkin Park, Limp Bizkit, Rise Against, Breaking Benjamin, Eminem, Bonobo, The Prodigy  
-🎮 **Favorite video games**: Red Dead Redemption II, Metro Exodus, Minecraft with friends  
+🎮 **Favorite video games**: Red Dead Redemption II, Metro Exodus, Microsoft Flight Simulator, Minecraft with friends  
 ⚡ **Fun fact**: The elites don’t want you to know this but the ducks at the park are free you can take them home I have 458 ducks.
 
 ---
