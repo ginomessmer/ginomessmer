@@ -44,7 +44,7 @@ In my spare time, I love traveling, developing applications, and writing blog po
 
 If you like what I'm doing and want to support my work, feel free to let me know and if you're extra generous, buy me a coffee.
 
-<a href="https://www.buymeacoffee.com/ginomessmer" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/default-orange.png" alt="Buy Me A Coffee" height="40px" ></a>
+<a href='https://ko-fi.com/P5P72WHKK' target='_blank'><img height='36' style='border:0px;height:36px;' src='https://cdn.ko-fi.com/cdn/kofi3.png?v=2' border='0' alt='Buy Me a Coffee at ko-fi.com' /></a>
 
 <!--
 **ginomessmer/ginomessmer** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
