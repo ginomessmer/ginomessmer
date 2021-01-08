@@ -2,15 +2,15 @@
 <h1 align="center">Gino Messmer</h1>
 <p align="center">Hi there! I'm Gino - a computer science student, <a href="https://studentambassadors.microsoft.com/en-US/profile/100985">Microsoft Student Learn Ambassador</a> and a full-stack software engineer at <a href="https://www.media-lesson.com/">medialesson</a>.</p>
 <p align="center">
-  <img src="https://ginomessmer-readme.azurewebsites.net/api/shields/hits?code=kcGyVPt0yNREOnxuOv0/2paiVOKfzw/gc/aJT6mD6mT3RLb83yGa4Q=="> 
-  <img src="https://github.com/ginomessmer/ginomessmer/workflows/.NET%20Core/badge.svg"> 
+  <img src="https://ginomessmer-readme.azurewebsites.net/api/shields/hits?code=kcGyVPt0yNREOnxuOv0/2paiVOKfzw/gc/aJT6mD6mT3RLb83yGa4Q==" alt="Total views"> 
+  <img src="https://github.com/ginomessmer/ginomessmer/workflows/.NET%20Core/badge.svg" alt=".NET Core build"> 
   <br><br>
   
-  <img src="https://ginomessmerreadme.blob.core.windows.net/shields/spotify.svg">
-  <img src="https://ginomessmerreadme.blob.core.windows.net/shields/steam.svg">
+  <img src="https://ginomessmerreadme.blob.core.windows.net/shields/spotify.svg" alt="Spotify shield">
+  <img src="https://ginomessmerreadme.blob.core.windows.net/shields/steam.svg" alt="Steam shield">
   <br>
   
-  <img src="https://ginomessmerreadme.blob.core.windows.net/shields/ms_learn.svg">
+  <img src="https://ginomessmerreadme.blob.core.windows.net/shields/ms_learn.svg" alt="Microsoft Learn shield">
 </p>
 
 ---
@@ -20,7 +20,7 @@ In my spare time, I love traveling, developing applications, and writing blog po
 [![Twitter Follow](https://img.shields.io/twitter/follow/ginomessmer?style=social)](https://twitter.com/ginomessmer)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn--blue?logo=linkedin&style=social)](https://www.linkedin.com/in/ginomessmer/)
 <br><br>
-<a href="https://studentambassadors.microsoft.com/en-US/profile/100985"><img src="assets/badges/mlsa.png" height="130px" width="auto" /></a>
+<a href="https://studentambassadors.microsoft.com/en-US/profile/100985"><img src="assets/badges/mlsa_alpha.png" height="130px" width="auto" alt="Microsoft Learn Student Ambassador badge" /></a>
 
 ---
 
