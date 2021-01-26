@@ -1,6 +1,6 @@
 
 <h1 align="center">Gino Messmer</h1>
-<p align="center">Hi there! I'm Gino - a computer science student, <a href="https://studentambassadors.microsoft.com/en-US/profile/100985">Microsoft Student Learn Ambassador</a> and a full-stack software engineer at <a href="https://www.media-lesson.com/">medialesson</a>.</p>
+<p align="center">Hi there! I'm Gino - a computer science student, <a href="https://studentambassadors.microsoft.com/en-US/profile/100985">Microsoft Learn Student Ambassador</a> and a full-stack software engineer at <a href="https://www.media-lesson.com/">medialesson</a>.</p>
 <p align="center">
   <img src="https://ginomessmer-readme.azurewebsites.net/api/shields/hits?code=kcGyVPt0yNREOnxuOv0/2paiVOKfzw/gc/aJT6mD6mT3RLb83yGa4Q==" alt="Total views"> 
   <img src="https://github.com/ginomessmer/ginomessmer/workflows/.NET%20Core/badge.svg" alt=".NET Core build"> 
@@ -28,13 +28,13 @@ In my spare time, I love traveling, developing applications, and writing blog po
 ## Key Facts
 #### What I'm doing
 💫 Started programming in 2010  
-⭐ **Favorite tech**: C#, .NET Core, Microsoft Azure, DevOps, Angular, React, TypeScript, Docker  
-🌟 **Right now I'm getting into**: Machine Learning, Distributed Systems, Kubernetes  
-✨ **Want to get into**: Microsoft Azure Certification  
+⭐ **Favorite tech**: C#, .NET, Microsoft Azure, DevOps, Docker, Distributed Systems, Angular, React, TypeScript   
+🌟 **Right now I'm getting into**: Machine Learning, Kubernetes  
+✨ **Want to get into**: AZ-204, Large Scale Projects  
 💡 **Professional experience**: Software Engineering, Community Management
 
 #### Contact
-✉ **Reach out to me**: [Twitter](https://twitter.com/ginomessmer), [LinkedIn](https://www.linkedin.com/in/ginomessmer/), [Telegram](https://t.me/ginomessmer), [Email](mailto:gino@messmerized.de)  
+✉ **Let's connect**: [Twitter](https://twitter.com/ginomessmer), [LinkedIn](https://www.linkedin.com/in/ginomessmer/), [Telegram](https://t.me/ginomessmer), [Email](mailto:gino@messmerized.de)  
 📝 **Where I'm blogging**: [Medium](https://medium.com/@ginomessmer), [dev.to](https://dev.to/ginomessmer)  
 🍻 **You can speak to me in** English or German (but not both at the same time)
 
