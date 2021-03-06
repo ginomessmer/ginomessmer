@@ -29,7 +29,7 @@ In my spare time, I love traveling, developing applications, and writing blog po
 #### What I'm doing
 💫 Started programming in 2010  
 ⭐ **Favorite tech**: C#, .NET, Microsoft Azure, DevOps, Docker, Distributed Systems, Angular, React, TypeScript   
-🌟 **Right now I'm getting into**: Machine Learning, Kubernetes  
+🌟 **Right now I'm getting into**: UWP, Machine Learning, Kubernetes  
 ✨ **Want to get into**: AZ-204, Large Scale Projects  
 💡 **Professional experience**: Software Engineering, Community Management
 
@@ -41,7 +41,7 @@ In my spare time, I love traveling, developing applications, and writing blog po
 #### Trivia
 🏙 **Favorite places so far**: London, Stockholm  
 🌆 **Want to visit**: New York, San Francisco  
-🎶 **What I'm listening to lately**: Linkin Park, Limp Bizkit, Rise Against, Breaking Benjamin, Eminem, Bonobo, The Prodigy  
+🎶 **What I'm listening to lately**: Linkin Park, Limp Bizkit, Muse, Breaking Benjamin, Eminem, Bonobo  
 🎮 **Favorite video games**: Red Dead Redemption II, Metro Exodus, Microsoft Flight Simulator, Minecraft with friends  
 ⚡ **Fun fact**: The elites don’t want you to know this but the ducks at the park are free you can take them home I have 458 ducks.
 
