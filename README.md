@@ -20,7 +20,7 @@ In my spare time, I love traveling, developing applications, and writing blog po
 [![Twitter Follow](https://img.shields.io/twitter/follow/ginomessmer?style=social)](https://twitter.com/ginomessmer)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn--blue?logo=linkedin&style=social)](https://www.linkedin.com/in/ginomessmer/)
 <br><br>
-<a href="https://studentambassadors.microsoft.com/en-US/profile/100985"><img src="assets/badges/mlsa_alpha.png" height="130px" width="auto" alt="Microsoft Learn Student Ambassador badge" /></a>
+<a href="https://studentambassadors.microsoft.com/en-US/profile/100985"><img src="assets/badges/mlsa_gold.png" height="130px" width="auto" alt="Microsoft Learn Student Ambassador badge" /></a>
 <a href="https://www.youracclaim.com/badges/9c3bae1f-506c-4c1d-821a-5c1f4a6eed9f"><img src="assets/badges/microsoft-certified-azure-fundamentals.png" height="130px" width="auto" alt="Microsoft Azure Fundamentals (AZ-900) Certification badge" /></a>
 <a href="https://www.youracclaim.com/badges/4f87848c-658d-4494-9bb8-7d984f46588c"><img src="assets/badges/microsoft-certified-azure-fundamentals-ai.png" height="130px" width="auto" alt="Microsoft Azure AI Fundamentals (AZ-900) Certification badge" /></a>
 
