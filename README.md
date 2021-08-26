@@ -15,7 +15,9 @@
 
 ---
 
-In my spare time, I love traveling, developing applications, and writing blog posts. Mostly, I roam around in the realms of **.NET, Azure, Angular, React, Docker, DevOps**, and much more. I love connecting with peers, I'm always eager to discover new technologies and sharing my knowledge with others on [Medium](https://medium.com/@ginomessmer) and [dev.to](https://dev.to/ginomessmer).
+I am a software developer with 10 years of experience and 4 years of professional experience. I am profound in building full-stack projects in C#, .NET, Microsoft Azure while keeping costs, best-practices, and good software design in mind.
+
+In my spare time, I love traveling, developing applications, and writing blog posts. Mostly, I roam around in the realms of **.NET, Azure, Angular, React, Docker, DevOps**, and much more. I want to make an impact with what I'm doing. I love connecting with peers. I'm always eager to discover new technologies and I love sharing my knowledge with others  on [Medium](https://medium.com/@ginomessmer) and [dev.to](https://dev.to/ginomessmer).
 
 [![Twitter Follow](https://img.shields.io/twitter/follow/ginomessmer?style=social)](https://twitter.com/ginomessmer)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn--blue?logo=linkedin&style=social)](https://www.linkedin.com/in/ginomessmer/)
