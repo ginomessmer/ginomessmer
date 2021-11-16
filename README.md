@@ -1,6 +1,6 @@
 
 <h1 align="center">Gino Messmer</h1>
-<p align="center">Hi there! I'm Gino - a full-stack software engineer at <a href="https://www.media-lesson.com/">medialesson</a> and <a href="https://studentambassadors.microsoft.com/en-US/profile/100985">Gold Microsoft Learn Student Ambassador</a>.</p>
+<p align="center">Hi there! I'm Gino - a Software Engineer <!-- full-stack software engineer at <a href="https://www.media-lesson.com/">medialesson</a> -->and <a href="https://studentambassadors.microsoft.com/en-US/profile/100985">Gold Microsoft Learn Student Ambassador</a>.</p>
 <p align="center">
   <img src="https://ginomessmer-readme.azurewebsites.net/api/shields/hits?code=kcGyVPt0yNREOnxuOv0/2paiVOKfzw/gc/aJT6mD6mT3RLb83yGa4Q==" alt="Total views"> 
   <img src="https://github.com/ginomessmer/ginomessmer/workflows/.NET%20Core/badge.svg" alt=".NET Core build"> 
@@ -15,7 +15,7 @@
 
 ---
 
-I am a software developer with 10 years of experience and 4 years of professional experience. I am profound in building full-stack projects in C#, .NET, Microsoft Azure while keeping costs, best-practices, and good software design in mind.
+I am a software developer with 10 years of experience and 5 years of professional experience. I am profound in building full-stack projects in C#, .NET, Microsoft Azure while keeping costs, best-practices, and good software design in mind.
 
 In my spare time, I love traveling, developing applications, and writing blog posts. Mostly, I roam around in the realms of **.NET, Azure, Angular, React, Docker, DevOps**, and much more. I want to make an impact with what I'm doing. I love connecting with peers. I'm always eager to discover new technologies and I love sharing my knowledge with others  on [Medium](https://medium.com/@ginomessmer) and [dev.to](https://dev.to/ginomessmer).
 
