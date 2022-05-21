@@ -19,9 +19,11 @@ I am a consultant and software developer with 10 years of experience and over 5 
 
 In my spare time, I love traveling, developing applications, and writing blog posts. Mostly, I roam around in the realms of **.NET, Azure, Angular, React, IaC, DevOps**, and much more. I want to make an impact with what I'm doing. I love connecting with peers. I'm always eager to discover new technologies and I love sharing my knowledge with others on [Medium](https://medium.com/@ginomessmer) and [dev.to](https://dev.to/ginomessmer).
 
-[![Twitter Follow](https://img.shields.io/twitter/follow/ginomessmer?style=social)](https://twitter.com/ginomessmer)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn--blue?logo=linkedin&style=social)](https://www.linkedin.com/in/ginomessmer/)
+[![Twitter Follow](https://img.shields.io/twitter/follow/ginomessmer?style=social)](https://twitter.com/ginomessmer)
+
 <br><br>
+
 <a href="https://www.credly.com/earner/earned/badge/589f2763-be23-4537-b9b6-b071f0d20f3f"><img src="assets/badges/azure-developer-associate.png" height="130px" width="auto" alt="Microsoft Azure Developer Associate (AZ-204) Certification badge" /></a>
 <a href="https://studentambassadors.microsoft.com/en-US/profile/100985"><img src="assets/badges/mlsa_gold.png" height="130px" width="auto" alt="Microsoft Learn Student Ambassador badge" /></a>
 <a href="https://www.youracclaim.com/badges/9c3bae1f-506c-4c1d-821a-5c1f4a6eed9f"><img src="assets/badges/microsoft-certified-azure-fundamentals.png" height="130px" width="auto" alt="Microsoft Azure Fundamentals (AZ-900) Certification badge" /></a>
