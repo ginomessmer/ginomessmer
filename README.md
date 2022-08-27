@@ -1,6 +1,6 @@
 
 <h1 align="center">Gino Messmer</h1>
-<p align="center">Hi there! I'm Gino - a Modern Apps Consultant at Microsoft and a former <a href="https://studentambassadors.microsoft.com/en-US/profile/100985">Gold Microsoft Learn Student Ambassador</a>.</p>
+<p align="center">Hi there! I'm Gino - a **Modern Apps Consultant at Microsoft** and a former <a href="https://studentambassadors.microsoft.com/en-US/profile/100985">Gold Microsoft Learn Student Ambassador</a>.</p>
 <p align="center">
   <img src="https://ginomessmer-readme.azurewebsites.net/api/shields/hits?code=kcGyVPt0yNREOnxuOv0/2paiVOKfzw/gc/aJT6mD6mT3RLb83yGa4Q==" alt="Total views"> 
   <img src="https://github.com/ginomessmer/ginomessmer/workflows/.NET%20Core/badge.svg" alt=".NET Core build"> 
