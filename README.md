@@ -51,11 +51,15 @@ In my spare time, I love traveling, developing applications, and writing blog po
 🎮 **Favorite video games**: Far Cry 6, Red Dead Redemption II, Metro Exodus, Microsoft Flight Simulator, Minecraft with friends  
 ⚡ **Fun fact**: The elites don’t want you to know this but the ducks at the park are free you can take them home I have 458 ducks.
 
+<!--
+
 ---
 
 If you like what I'm doing and want to support my work, feel free to let me know and if you're extra generous, buy me a coffee.
 
 <a href='https://ko-fi.com/P5P72WHKK' target='_blank'><img height='36' style='border:0px;height:36px;' src='https://cdn.ko-fi.com/cdn/kofi3.png?v=2' border='0' alt='Buy Me a Coffee at ko-fi.com' /></a>
+
+-->
 
 <!--
 **ginomessmer/ginomessmer** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
