@@ -11,6 +11,7 @@
 
 ## 2022
 <a href="https://www.credly.com/earner/earned/badge/589f2763-be23-4537-b9b6-b071f0d20f3f"><img src="assets/badges/azure-developer-associate.png" height="130px" width="auto" alt="Microsoft Azure Developer Associate (AZ-204) Certification badge" /></a>
+<a href="https://www.credly.com/earner/earned/badge/b8a36690-3c89-45af-bb02-7b86ff32a160"><img src="assets/badges/msft-hackathon-22.png" height="130px" width="auto" alt="Microsoft Hackathon 2022 badge" /></a>
 
 ## 2021
 <a href="https://studentambassadors.microsoft.com/en-US/profile/100985"><img src="assets/badges/mlsa_gold.png" height="130px" width="auto" alt="Microsoft Learn Student Ambassador badge" /></a>
