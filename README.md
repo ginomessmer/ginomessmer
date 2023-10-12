@@ -9,6 +9,14 @@
   <!-- <img src="https://github.com/ginomessmer/ginomessmer/workflows/.NET%20Core/badge.svg" alt=".NET Core build">  -->
 </p>
 
+## 2022
+<a href="https://www.credly.com/earner/earned/badge/589f2763-be23-4537-b9b6-b071f0d20f3f"><img src="assets/badges/azure-developer-associate.png" height="130px" width="auto" alt="Microsoft Azure Developer Associate (AZ-204) Certification badge" /></a>
+
+## 2021
+<a href="https://studentambassadors.microsoft.com/en-US/profile/100985"><img src="assets/badges/mlsa_gold.png" height="130px" width="auto" alt="Microsoft Learn Student Ambassador badge" /></a>
+<a href="https://www.youracclaim.com/badges/9c3bae1f-506c-4c1d-821a-5c1f4a6eed9f"><img src="assets/badges/microsoft-certified-azure-fundamentals.png" height="130px" width="auto" alt="Microsoft Azure Fundamentals (AZ-900) Certification badge" /></a>
+<a href="https://www.youracclaim.com/badges/4f87848c-658d-4494-9bb8-7d984f46588c"><img src="assets/badges/microsoft-certified-azure-fundamentals-ai.png" height="130px" width="auto" alt="Microsoft Azure AI Fundamentals (AZ-900) Certification badge" /></a>
+
 <!--
 **ginomessmer/ginomessmer** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
