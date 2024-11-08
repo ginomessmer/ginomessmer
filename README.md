@@ -10,15 +10,7 @@
 
 # Welcome 🏁
 
-> *Life's too short to drive boring cars.*
-
-That's why I drive change in the automotive industry as a tech consultant, not just cars.
-
 I'm a passionate tech consultant and full stack developer, diving deep into the world of Microsoft Azure, Microsoft 365, .NET, React, and Bicep. Whether it's building scalable cloud solutions or crafting responsive UIs, I'm all about creating impactful tech that resonates.
-
-What's my finish line? To leverage these powerful technologies to deliver real business value, streamline processes, and drive digital innovation.
-
-Check out my [LinkedIn profile](https://www.linkedin.com/in/ginomessmer/) to learn more. Thanks for reading so far.
 
 # My Certifications 🏅 
 
@@ -41,7 +33,7 @@ Check out my [LinkedIn profile](https://www.linkedin.com/in/ginomessmer/) to lea
 
 </br>
 
-## Other nice badges worth showcasing
+## Other nice badges
 
 <a href="https://www.credly.com/earner/earned/badge/b8a36690-3c89-45af-bb02-7b86ff32a160"><img src="assets/badges/msft-hackathon-22.png" height="130px" width="auto" alt="Microsoft Hackathon 2022 badge" /></a>
 <a href="https://studentambassadors.microsoft.com/en-US/profile/100985"><img src="assets/badges/mlsa_gold.png" height="130px" width="auto" alt="Microsoft Learn Student Ambassador badge" /></a>
