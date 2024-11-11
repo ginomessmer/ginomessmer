@@ -1,20 +1,13 @@
 <p>
-  <img src="https://ginomessmerreadme.blob.core.windows.net/shields/spotify.svg" alt="Spotify shield">
-  <img src="https://ginomessmerreadme.blob.core.windows.net/shields/steam.svg" alt="Steam shield">
   <img src="https://ginomessmer-readme.azurewebsites.net/api/shields/hits?code=kcGyVPt0yNREOnxuOv0/2paiVOKfzw/gc/aJT6mD6mT3RLb83yGa4Q==" alt="Total views"> 
-
-  <br>
-  
   <img src="https://ginomessmerreadme.blob.core.windows.net/shields/ms_learn.svg" alt="Microsoft Learn shield">
 </p>
 
-# Welcome 🏁
-
 I'm a passionate tech consultant and full stack developer, diving deep into the world of Microsoft Azure, Microsoft 365, .NET, React, and Bicep. Whether it's building scalable cloud solutions or crafting responsive UIs, I'm all about creating impactful tech that resonates.
 
-# My Certifications 🏅 
+## My Certifications 🏅 
 
-## Microsoft Certified Associate
+### Microsoft Certified Associate
 
 <a href="https://www.credly.com/earner/earned/badge/589f2763-be23-4537-b9b6-b071f0d20f3f"><img src="assets/badges/microsoft-certified-associate-badge.svg" height="130px" width="auto" alt="Microsoft Azure Administrator Associate (AZ-104) Certification badge" align="right" /></a>
 
@@ -23,7 +16,7 @@ I'm a passionate tech consultant and full stack developer, diving deep into the 
 
 </br>
 
-## Microsoft Certified Fundamentals
+### Microsoft Certified Fundamentals
 
 <a href="https://www.youracclaim.com/badges/9c3bae1f-506c-4c1d-821a-5c1f4a6eed9f"><img src="assets/badges/microsoft-certified-azure-fundamentals.png" height="130px" width="auto" alt="Microsoft Azure Fundamentals (AZ-900) Certification badge" align="right" /></a>
 <a href="https://www.youracclaim.com/badges/4f87848c-658d-4494-9bb8-7d984f46588c"><img src="assets/badges/microsoft-certified-azure-fundamentals-ai.png" height="130px" width="auto" alt="Microsoft Azure AI Fundamentals (AZ-900) Certification badge" align="right" /></a>
@@ -33,7 +26,7 @@ I'm a passionate tech consultant and full stack developer, diving deep into the 
 
 </br>
 
-## Other nice badges
+### Misc Achievements
 
 <a href="https://www.credly.com/earner/earned/badge/b8a36690-3c89-45af-bb02-7b86ff32a160"><img src="assets/badges/msft-hackathon-22.png" height="130px" width="auto" alt="Microsoft Hackathon 2022 badge" /></a>
 <a href="https://studentambassadors.microsoft.com/en-US/profile/100985"><img src="assets/badges/mlsa_gold.png" height="130px" width="auto" alt="Microsoft Learn Student Ambassador badge" /></a>
