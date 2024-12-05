@@ -3,9 +3,9 @@
   <img src="https://ginomessmerreadme.blob.core.windows.net/shields/ms_learn.svg" alt="Microsoft Learn shield">
 </p>
 
-I'm a passionate tech consultant and full stack developer, diving deep into the world of Microsoft Azure, Microsoft 365, .NET, React, and Bicep. Whether it's building scalable cloud solutions or crafting responsive UIs, I'm all about creating impactful tech that resonates.
+I'm a passionate tech consultant, diving deep into the world of Microsoft Azure, Microsoft 365 & app, web and cloud development. Whether it's building scalable cloud solutions or crafting responsive UIs, I'm all about creating impactful tech that resonates.
 
-## My Certifications 🏅 
+## 🏅 Certifications 
 
 ### Microsoft Certified Associate
 
