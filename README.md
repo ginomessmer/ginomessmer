@@ -11,6 +11,7 @@ I'm a passionate tech consultant, diving deep into the world of Microsoft Azure,
 
 <a href="https://www.credly.com/earner/earned/badge/589f2763-be23-4537-b9b6-b071f0d20f3f"><img src="assets/badges/microsoft-certified-associate-badge.svg" height="130px" width="auto" alt="Microsoft Azure Administrator Associate (AZ-104) Certification badge" align="right" /></a>
 
+- Microsoft Certified: Azure AI Engineer Associate (AI-102)
 - Microsoft Certified: Azure Administrator Associate (AZ-104)
 - Microsoft Certified: Azure Developer Associate (AZ-204)
 
