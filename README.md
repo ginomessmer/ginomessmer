@@ -1,31 +1,6 @@
-<p>
-  <img src="https://ginomessmer-readme.azurewebsites.net/api/shields/hits?code=kcGyVPt0yNREOnxuOv0/2paiVOKfzw/gc/aJT6mD6mT3RLb83yGa4Q==" alt="Total views"> 
-  <img src="https://ginomessmerreadme.blob.core.windows.net/shields/ms_learn.svg" alt="Microsoft Learn shield">
-</p>
+PHAgYWxpZ249ImxlZnQiPgogIDxpbWcgc3JjPSJodHRwczovL2dpbm9tZXNzbWVyLXJlYWRtZS5henVyZXdlYnNpdGVzLm5ldC9hcGkvc2hpZWxkcy9oaXRzP2NvZGU9a2NHeVZQdDB5TlJFT254dU92MC8ycGFpVk9LZnp3L2djL2FKVDZtRDZtVDNSTGI4M3lHYTRRPT0iIGFsdD0iVG90YWwgdmlld3MiPiAKICA8aW1nIHNyYz0iaHR0cHM6Ly9naW5vbWVzc21lcnJlYWRtZS5ibG9iLmNvcmUud2luZG93cy5uZXQvc2hpZWxkcy9tc19sZWFybi5zdmciIGFsdD0iTWljcm9zb2Z0IExlYXJuIHNoaWVsZCI+CjwvcD4KCkhleSBJJ20gR2lubyDwn5GHCgpCdWlsZGluZyBzb2Z0d2FyZSBzaW5jZSAyMDExIOKAjSA5IHllYXJzIHByb2Zlc3Npb25hbCBleHBlcmllbmNlLgo0LjUgeWVhcnMgYXQgTWljcm9zb2Z0IHdvcmtpbmcgd2l0aCAyMCsgZW50ZXJwcmlzZSBjdXN0b21lcnMgYWNyb3NzIEdlcm1hbnkgYW5kIEVNRUEuIEkgb3duIHRlY2huaWNhbCBwcmUtc2FsZXMgY3ljbGVzIGVuZC10by1lbmQ6IGZyb20gdGVjaG5pY2FsIGRpc2N1c3Npb25zIGFuZCBQb0MgZGVsaXZlcnkgdG8gZXhlY3V0aXZlIHByZXNlbnRhdGlvbnMgYW5kIGRlYWwgY2xvc2UuCgojIyDwn4udIEZlYXR1cmVkIEN1c3RvbWVyIFdvcmsKCnwgQ3VzdG9tZXIgfCBUb3BpYyB8IFJlZmVyZW5jZSB8CnwtLS18LS0tfC0tLXwKfCAqKkJNVyBBRyoqIHwgTXVsdGktQWdlbnRpYyBBSSBQbGF0Zm9ybSB8IFtNaWNyb3NvZnQgQ3VzdG9tZXIgU3RvcnkgJnJhcnI7XShodHRwczovL3d3dy5taWNyb3NvZnQuY29tL2VuL2N1c3RvbWVycy9zdG9yeS8yNTY4My1ibXctYWctYXp1cmUpIHwKfCAqKkJNVyBHcm91cCoqIHwgSW5ub3ZhdGlvbiBIdWIgRGluZ29sZmluZyDigJQgSW5kdXN0cnkgNC4wIFBvQ3MgfCBbQk1XIFByZXNzQ2x1YiAmmW5ld0Fycjt9KGh0dHBzOi8vd3d3LnByZXNzLmJtd2dyb3VwLmNvbS9kZXV0c2NobGFuZC9hcnRpY2xlL2RldGFpbC9UMDY0OTkwOERFKSB8CnwgKipTdHJhYmFnIFNFKiogfCBBSSBSaXNrIE1hbmFnZW1lbnQgUGxhdGZvcm0gKHByZS1DaGF0R1BUKSAgfCBbTWljcm9zb2Z0IEN1c3RvbWVyIFN0b3J5ICZyYXJyO10oaHR0cHM6Ly93d3cubWljcm9zb2Z0LmNvbS9lbi9jdXN0b21lcnMvc3Rvcnkvb241NjgyMTUwNDYwNjE1NjI4NDgzLXN0cmFiYWctZGlzY3JldGUtbWFudWZhY3R1cmluZy1henVyZS1lbi1hdXN0cmlhKSB8CgojIyDwn5uIIEZlYXR1cmVkIFByb2plY3RzCgoqKlthemljXShodHRwczovL2dpdGh1Yi5jb20vZ2lub21lc3NtZXIvYXptYykqKiDigJQgQXp1cmUgTWluZWNyYWZ0ICAKUG9ydGlvbi1ncmFkZSBNaW5lY3JhZnQgc2VydmVyIGRlcGxveW1lbnQgb24gQXp1cmUgQ29udGFpbmVyIEluc3RhbmNlcy4gIApCaWNlcCBJYUMgwrcgTWFuYWdlZCBJZGVudGl0aWVzIMK3IEF1dG8tc2h1dGRvd24gY29zdCBnb3Zlcm5hbmNlIMK3IERpc2NvcmQgYm90IGludGVncmF0aW9uICAgClsqU2VjdXJlLWJ5LWRlZmF1bHQgLS0gbm8gc2VjcmV0cywgbWFuYWdlZCBpZGVudGl0eSBhdXRoIHRocm91Z2hvdXQuKl0KCiMjIPCfm4ggV2hhdCBJIHdvcmsgd2l0aAoKKipBSSAmIENvcGlsb3QqKiAgCkdpdEh1YiBDb3BpbG90ICZtaWRkb3Q7IE9wZW5BSSBBSUFQSSB+bWlkZG90OyBBenVyZSBGb3VuZHJ5ICZtaWRkb3Q7IEFnZW50IEZyYW1ld29yayAmbWlkZG90OyBSQUcKCioqRGV2T3BzICYgRGV2U2VjT3BzKiogIApHaXRIdWIgQWN0aW9ucyAmbWlkZG90OyBBenVyZSBQaXBlbGluZXMgJm1pZGRvdDsgU29uYXJRdWJlICZtaWRkb3Q7IEVudHJhIElEL09JREMvRmVkZXJhdGVkIEF1dGhlbnRpY2F0aW9uICZtaWRkb3Q7IENVQ0QgUGlwZWxpbmUgSGFyZGVuaW5nCgoqKkNsb3VkKiogIApNaWNyb3NvZnQgQXp1cmUgJm1pZGRvdDsgQ29zbW9zIERCICZtaWRkb3Q7IEZ1bmN0aW9ucyAmbWlkZG90OyBDb250YWluZXJzICZtaWRkb3Q7IEFwcCBTZXJ2aWNlICZtaWRkb3Q7IEJpY2VwCgoqKlByZS1TYWxlcyoqICBWYWx1ZSBTZWxsaW5nICZtaWRkb3Q7IFBvQyBEZWxpdmVyeSAmbWlkZG90OyBUZWNobbljYWwgRGVtb3MgJm1pZGRvdDsgU3Rha2Vob2xkZXIgTWFwcGluZyAmbWlkZG90OyBFeGVjdXRpdmUgUHJlc2VudGF0aW9ucwoKIyMg8J+Qhf Certification
 
-Hey, I'm Gino 👋
-
-I have 15+ years of total experience in software development, 9 YoE in professional IT-consulting with a focus on automotive and manufacturing enterprise accounts. I'm focused on full-stack development, AI-driven SDLC - helping enterprise engineering teams build faster and more securely.
-
-4.5 years at Microsoft working with 20+ enterprise customers across Germany and EMEA. I own technical pre-sales cycles end-to-end: from technical discussions and PoC delivery to executive presentations and deal close.
-
-## 🛠️ What I work with
-
-**AI & Copilot**  
-GitHub Copilot &middot; OpenAI API  &middot; Azure Foundry &middot; Agent Framework &middot; RAG
-
-**DevOps & DevSecOps**  
-GitHub Actions &middot; Azure Pipelines &middot; SonarQube &middot; Entra ID/OIDC/Federated Authentication &middot; CI/CD Pipeline Hardening
-
-**Cloud**  
-Microsoft Azure &middot; Cosmos DB &middot; Functions &middot; Containers &middot; App Service &middot; Bicep
-
-**Pre-Sales**  
-Value Selling &middot; PoC Delivery &middot; Technical Demos &middot; Stakeholder Mapping &middot; Executive Presentations
-
-## 🏅 Certifications 
-
-### Microsoft Certified Associate
+**01Microsoft Certified Associate**
 
 <a href="https://www.credly.com/earner/earned/badge/589f2763-be23-4537-b9b6-b071f0d20f3f"><img src="assets/badges/microsoft-certified-associate-badge.svg" height="130px" width="auto" alt="Microsoft Azure Administrator Associate (AZ-104) Certification badge" align="right" /></a>
 
@@ -49,18 +24,3 @@ Value Selling &middot; PoC Delivery &middot; Technical Demos &middot; Stakeholde
 
 <a href="https://www.credly.com/earner/earned/badge/b8a36690-3c89-45af-bb02-7b86ff32a160"><img src="assets/badges/msft-hackathon-22.png" height="130px" width="auto" alt="Microsoft Hackathon 2022 badge" /></a>
 <a href="https://studentambassadors.microsoft.com/en-US/profile/100985"><img src="assets/badges/mlsa_gold.png" height="130px" width="auto" alt="Microsoft Learn Student Ambassador badge" /></a>
-
-<!--
-**ginomessmer/ginomessmer** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-
-Here are some ideas to get you started:
-
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
