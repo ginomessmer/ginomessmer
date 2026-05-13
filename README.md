@@ -13,7 +13,7 @@ Building software since 2011 · 9 years professional experience.
 | Customer | Topic | Reference |
 |---|---|---|
 | **BMW AG** | Multi-Agentic AI Platform for Test Fleet Analysis | [Microsoft Customer Story →](https://www.microsoft.com/en/customers/story/25683-bmw-ag-azure) |
-| **BMW Group** | Innovation Hub — Industry 4.0 PoCs | [BMW PressClub →](https://www.press.bmwgroup.com/deutschland/article/detail/T0402378DE/) |
+| **BMW AG** | Innovation Hub — Industry 4.0 PoCs | [BMW PressClub →](https://www.press.bmwgroup.com/deutschland/article/detail/T0402378DE/) |
 | **Strabag SE** | AI Risk Management Platform (pre-ChatGPT) | [Microsoft Customer Story →](https://www.microsoft.com/en/customers/story/1596825960615628483-strabag-discrete-manufacturing-azure-en-austria) |
 
 ## 🔧 Featured Projects
