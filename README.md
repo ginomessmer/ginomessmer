@@ -1,18 +1,32 @@
-<p>
+<p align="left">
   <img src="https://ginomessmer-readme.azurewebsites.net/api/shields/hits?code=kcGyVPt0yNREOnxuOv0/2paiVOKfzw/gc/aJT6mD6mT3RLb83yGa4Q==" alt="Total views"> 
   <img src="https://ginomessmerreadme.blob.core.windows.net/shields/ms_learn.svg" alt="Microsoft Learn shield">
 </p>
 
 Hey, I'm Gino 👋
 
-I have 15+ years of total experience in software development, 9 YoE in professional IT-consulting with a focus on automotive and manufacturing enterprise accounts. I'm focused on full-stack development, AI-driven SDLC - helping enterprise engineering teams build faster and more securely.
-
+Building software since 2011 · 9 years professional experience.  
 4.5 years at Microsoft working with 20+ enterprise customers across Germany and EMEA. I own technical pre-sales cycles end-to-end: from technical discussions and PoC delivery to executive presentations and deal close.
+
+## 🏭 Featured Customer Work
+
+| Customer | Topic | Reference |
+|---|---|---|
+| **BMW AG** | Multi-Agentic AI Platform | [Microsoft Customer Story →](https://www.microsoft.com/en/customers/story/25683-bmw-ag-azure) |
+| **BMW Group** | Innovation Hub Dingolfing — Industry 4.0 PoCs | [BMW PressClub →](https://www.press.bmwgroup.com/deutschland/article/detail/T0402378DE/) |
+| **Strabag SE** | AI Risk Management Platform (pre-ChatGPT) | [Microsoft Customer Story →](https://www.microsoft.com/en/customers/story/1596825960615628483-strabag-discrete-manufacturing-azure-en-austria) |
+
+## 🔧 Featured Projects
+
+**[azmc](https://github.com/ginomessmer/azmc)** — Azure Minecraft  
+Production-grade Minecraft server deployment on Azure Container Instances.  
+Bicep IaC · Managed Identities · Auto-shutdown cost governance · Discord bot integration  
+*Secure-by-default — no secrets, managed identity auth throughout.*
 
 ## 🛠️ What I work with
 
 **AI & Copilot**  
-GitHub Copilot &middot; OpenAI API  &middot; Azure Foundry &middot; Agent Framework &middot; RAG
+GitHub Copilot &middot; OpenAI API &middot; Azure Foundry &middot; Agent Framework &middot; RAG
 
 **DevOps & DevSecOps**  
 GitHub Actions &middot; Azure Pipelines &middot; SonarQube &middot; Entra ID/OIDC/Federated Authentication &middot; CI/CD Pipeline Hardening
@@ -23,7 +37,7 @@ Microsoft Azure &middot; Cosmos DB &middot; Functions &middot; Containers &middo
 **Pre-Sales**  
 Value Selling &middot; PoC Delivery &middot; Technical Demos &middot; Stakeholder Mapping &middot; Executive Presentations
 
-## 🏅 Certifications 
+## 🏅 Certifications
 
 ### Microsoft Certified Associate
 
@@ -49,18 +63,3 @@ Value Selling &middot; PoC Delivery &middot; Technical Demos &middot; Stakeholde
 
 <a href="https://www.credly.com/earner/earned/badge/b8a36690-3c89-45af-bb02-7b86ff32a160"><img src="assets/badges/msft-hackathon-22.png" height="130px" width="auto" alt="Microsoft Hackathon 2022 badge" /></a>
 <a href="https://studentambassadors.microsoft.com/en-US/profile/100985"><img src="assets/badges/mlsa_gold.png" height="130px" width="auto" alt="Microsoft Learn Student Ambassador badge" /></a>
-
-<!--
-**ginomessmer/ginomessmer** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-
-Here are some ideas to get you started:
-
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
