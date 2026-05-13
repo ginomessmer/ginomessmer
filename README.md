@@ -3,7 +3,25 @@
   <img src="https://ginomessmerreadme.blob.core.windows.net/shields/ms_learn.svg" alt="Microsoft Learn shield">
 </p>
 
-I'm a passionate tech consultant, diving deep into the world of Microsoft Azure, Microsoft 365 & app, web and cloud development. Whether it's building scalable cloud solutions or crafting responsive UIs, I'm all about creating impactful tech that resonates.
+Hey, I'm Gino 👋
+
+I have 15+ years of total experience in software development, 9 YoE in professional IT-consulting with a focus on automotive and manufacturing enterprise accounts. I'm focused on full-stack development, AI-driven SDLC - helping enterprise engineering teams build faster and more securely.
+
+4.5 years at Microsoft working with 20+ enterprise customers across Germany and EMEA. I own technical pre-sales cycles end-to-end: from technical discussions and PoC delivery to executive presentations and deal close.
+
+## 🛠️ What I work with
+
+**AI & Copilot**  
+GitHub Copilot &middot; OpenAI API  &middot; Azure Foundry &middot; Agent Framework &middot; RAG
+
+**DevOps & DevSecOps**  
+GitHub Actions &middot; Azure Pipelines &middot; SonarQube &middot; Entra ID/OIDC/Federated Authentication &middot; CI/CD Pipeline Hardening
+
+**Cloud**  
+Microsoft Azure &middot; Cosmos DB &middot; Functions &middot; Containers &middot; App Service &middot; Bicep
+
+**Pre-Sales**  
+Value Selling &middot; PoC Delivery &middot; Technical Demos &middot; Stakeholder Mapping &middot; Executive Presentations
 
 ## 🏅 Certifications 
 
